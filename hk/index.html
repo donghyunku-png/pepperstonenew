@@ -341,9 +341,12 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   var BASE_PARAMS = { legalEntity: 'individual', locale: 'zh-HK' };
   function getUTMParams() {
     var params = new URLSearchParams(window.location.search);
-    var utmKeys = ['utm_source','utm_medium','utm_campaign','utm_id','utm_term','utm_content'];
     var u = {};
-    utmKeys.forEach(function(k) { var v = params.get(k); if(v) u[k] = v; });
+    params.forEach(function(v, k) {
+      if (k.toLowerCase().indexOf('utm') === 0) {
+        u[k] = v;
+      }
+    });
     return u;
   }
   function buildURL(isDemo) {
