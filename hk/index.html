@@ -3,19 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pepperstone — 交易新手入門指南｜多元市場交易工具</title>
-<meta name="description" content="從零開始認識外匯交易。了解如何選擇合適的平台、掌握基礎知識，並建立穩健的風險管理觀念。">
+<title>Pepperstone — 平台資訊概覽與使用入門指南</title>
+<meta name="description" content="了解 Pepperstone 平台功能、帳戶選項、支援資源及教育內容，方便用戶在支援地區了解相關服務與使用方式。">
 <link rel="shortcut icon" href="../assets/image/favicon.ico" type="image/x-icon">
-<link rel="icon" href="../assets/image/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;--bg-elevated:#1a2233;
+  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;
   --border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);
   --border-accent:rgba(0,100,250,0.3);--text:#e6e8f0;--text-sub:#9ba1b8;--text-muted:#555c75;
   --pp-blue:#0064FA;--pp-blue-light:#3388ff;--pp-blue-glow:rgba(0,100,250,0.08);
-  --accent:#00c896;--gold:#f5c842;
+  --gold:#f5c842;
   --font-display:'Plus Jakarta Sans',sans-serif;--font-body:'Noto Sans TC',sans-serif;--font-mono:'Space Mono',monospace;
   --radius:12px;--radius-lg:20px;--max-w:1200px;--ease:0.3s cubic-bezier(0.4,0,0.2,1);
 }
@@ -50,9 +49,8 @@ nav a:hover{color:var(--text)}
 .hero h1 em{font-style:normal;color:var(--pp-blue-light)}
 .hero-desc{color:var(--text-sub);font-size:16px;line-height:1.8;margin-bottom:32px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
-.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
-.hero-stat-value{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--pp-blue-light)}
-.hero-stat-label{font-size:12px;color:var(--text-muted);margin-top:2px}
+.hero-pills{display:flex;gap:16px;flex-wrap:wrap}
+.hero-pill{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:12px 20px;font-size:14px;color:var(--text-sub);font-weight:500}
 .hero-visual img{max-width:100%;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(0,100,250,0.15))}
 .awards-bar{padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .awards-bar img{max-height:48px;margin:0 auto;opacity:0.85;max-width:100%;object-fit:contain}
@@ -86,22 +84,6 @@ nav a:hover{color:var(--text)}
 .platform-icon{font-size:36px;margin-bottom:16px}
 .platform-card h3{font-family:var(--font-display);font-weight:700;font-size:16px;margin-bottom:8px}
 .platform-card p{font-size:13px;color:var(--text-muted);line-height:1.6}
-.comparison{padding:80px 0}
-.comparison-intro{text-align:center;max-width:700px;margin:0 auto 40px}
-.comparison-intro p{color:var(--text-sub);font-size:15px;margin-top:12px}
-.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--border)}
-table{width:100%;border-collapse:collapse;min-width:700px}
-thead th{background:var(--bg-card);padding:16px 20px;text-align:left;font-family:var(--font-display);font-weight:600;font-size:13px;color:var(--text-sub);border-bottom:1px solid var(--border);white-space:nowrap}
-tbody td{padding:16px 20px;font-size:13px;border-bottom:1px solid var(--border);color:var(--text-sub);vertical-align:middle}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:var(--bg-surface)}
-tbody tr.hl{background:var(--pp-blue-glow)}
-tbody tr.hl td{color:var(--text)}
-.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:7px;font-size:12px;font-weight:700;font-family:var(--font-display)}
-.rank-badge.gold{background:rgba(245,200,66,0.12);color:var(--gold);border:1px solid rgba(245,200,66,0.2)}
-.rank-badge.normal{background:var(--bg-surface);color:var(--text-muted)}
-.broker-name{font-weight:600;color:var(--text)}
-.score{font-family:var(--font-mono);font-weight:700;color:var(--pp-blue-light)}
 .faq{padding:100px 0}
 .faq-list{max-width:800px;margin:48px auto 0}
 .faq-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;background:var(--bg-card);transition:var(--ease)}
@@ -136,15 +118,13 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   .feature-row:nth-child(even) .feature-text{order:1}
   .feature-row:nth-child(even) .feature-img{order:2}
   .guide-steps,.platform-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{flex-direction:column}
-  nav{display:none}.mobile-toggle{display:block}
+  .footer-top{flex-direction:column}nav{display:none}.mobile-toggle{display:block}
 }
 @media(max-width:600px){
   .guide-steps,.platform-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;align-items:flex-start}
-  .hero-stats{flex-direction:column;gap:16px}
-  .cta-box{padding:32px}
-  .footer-links{flex-direction:column;gap:24px}
+  .hero-pills{flex-direction:column;gap:10px}
+  .cta-box{padding:32px}.footer-links{flex-direction:column;gap:24px}
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .anim{opacity:0;animation:fadeUp 0.7s ease forwards}.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
@@ -155,35 +135,35 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="header-inner">
     <a href="/"><img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" class="logo-img"></a>
     <nav id="mainNav">
-      <a href="#guide">新手入門</a>
-      <a href="#features">核心優勢</a>
+      <a href="#guide">使用入門</a>
+      <a href="#features">平台資訊</a>
       <a href="#platforms">交易平台</a>
       <a href="#faq">常見問題</a>
-      <a href="#" class="nav-cta register-link">免費開戶</a>
+      <a href="#" class="nav-cta register-link">了解更多</a>
     </nav>
     <button class="mobile-toggle" onclick="document.getElementById('mainNav').style.display=document.getElementById('mainNav').style.display==='flex'?'none':'flex'">☰</button>
   </div>
 </header>
-<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="#" style="color:var(--pp-blue-light)">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
+<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/" style="color:var(--pp-blue-light)">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
 
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
       <div>
         <div class="badge anim" style="margin-bottom:20px">Pepperstone · 2026</div>
-        <h1 class="anim d1">歡迎了解<br><em>多元市場交易工具</em></h1>
-        <p class="hero-desc anim d2">提供多種市場資訊與交易功能，涵蓋外匯、指數、大宗商品、加密貨幣及股票相關市場內容，並支援策略觀察與交易工具使用。</p>
+        <h1 class="anim d1">歡迎了解<br><em>Pepperstone 平台資訊概覽</em></h1>
+        <p class="hero-desc anim d2">本網站提供 Pepperstone 平台功能、帳戶選項、支援資源及教育內容的整體資訊，方便用戶在支援地區了解相關服務與使用方式。</p>
         <div class="hero-btns anim d3">
-          <a href="#" class="btn-primary register-link">免費開設帳戶 →</a>
-          <a href="#guide" class="btn-outline">了解如何開始 ↓</a>
+          <a href="#" class="btn-primary register-link">了解更多 →</a>
+          <a href="#guide" class="btn-outline">查看使用入門 ↓</a>
         </div>
-        <div class="hero-stats anim d4">
-          <div><div class="hero-stat-value">830K+</div><div class="hero-stat-label">全球交易者</div></div>
-          <div><div class="hero-stat-value">$1T+</div><div class="hero-stat-label">每月成交金額(AUD)</div></div>
-          <div><div class="hero-stat-value">1,200+</div><div class="hero-stat-label">可交易商品</div></div>
+        <div class="hero-pills anim d4">
+          <div class="hero-pill">📊 平台功能</div>
+          <div class="hero-pill">👤 帳戶選項</div>
+          <div class="hero-pill">💬 支援資源</div>
         </div>
       </div>
-      <div class="anim d3"><img src="../assets/image/FeaturedCards_01.png" alt="Trading Platform"></div>
+      <div class="anim d3"><img src="../assets/image/FeaturedCards_01.png" alt="Platform"></div>
     </div>
   </div>
 </section>
@@ -193,23 +173,23 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="edu-section" id="guide">
   <div class="container">
     <div class="edu-intro">
-      <div class="section-label">新手入門</div>
-      <h2 class="section-title">外匯交易入門四步驟</h2>
-      <p>不論您是剛接觸金融市場的新手，還是希望進一步拓展交易技巧的投資人，以下四個步驟將協助您建立扎實的交易基礎。</p>
+      <div class="section-label">使用入門</div>
+      <h2 class="section-title">平台使用入門指南</h2>
+      <p>如果您是第一次了解平台功能，以下內容將協助您快速認識帳戶存取方式、平台工具、教育資源與支援服務。</p>
     </div>
     <div class="guide-steps">
-      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📚</div><h3>認識市場基礎</h3><p>外匯是全球規模最大的金融市場，日均交易量超過 6 兆美元。了解貨幣對、點差與槓桿的運作方式，是踏入交易世界的第一步。</p></div>
-      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🖥️</div><h3>挑選合適平台</h3><p>選擇受主流監管機構監管的交易平台至關重要。理想的平台應具備穩定的下單速度、具競爭力的點差，以及完善的分析工具。</p></div>
-      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🎯</div><h3>模擬帳戶練習</h3><p>在投入真實資金之前，建議先透過模擬帳戶熟悉操作流程，練習不同策略，感受市場的實際波動節奏。</p></div>
-      <div class="step-card"><div class="step-num">04</div><div class="step-icon">🛡️</div><h3>建立風控觀念</h3><p>設定停損、合理控制部位大小、適度分散風險，是保護資金的核心策略。成功的交易者，首先是出色的風險管理者。</p></div>
+      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📋</div><h3>認識基本資訊</h3><p>建議先了解平台常見用語、帳戶設定方式，以及主要產品揭露內容，再進一步查看可用功能。</p></div>
+      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🔍</div><h3>探索可用工具</h3><p>用戶可查看不同介面、圖表工具與帳戶功能，了解各項設定與功能配置是否符合自身需求。</p></div>
+      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🖥️</div><h3>體驗模擬功能</h3><p>若平台提供模擬環境，用戶可先熟悉介面操作與功能配置，再進一步了解其他帳戶功能。</p></div>
+      <div class="step-card"><div class="step-num">04</div><div class="step-icon">📄</div><h3>查看風險資訊</h3><p>使用任何市場相關功能前，建議先詳閱平台揭露文件、產品資訊及帳戶條款。</p></div>
     </div>
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">核心優勢</div>
-      <h2 class="section-title">為什麼選擇 Pepperstone？</h2>
+      <div class="section-label">關於平台</div>
+      <h2 class="section-title">關於 Pepperstone 平台</h2>
     </div>
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;text-align:center;margin-bottom:60px">
       <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:36px;margin:0 auto 20px">
-      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">全球逾 83 萬名交易者信賴 Pepperstone，憑藉的是極速下單、超低點差與多平台彈性選擇。以下是我們的核心優勢。</p>
+      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Pepperstone 提供平台存取、帳戶選項、支援資源及教育內容，方便支援地區的用戶了解相關服務。</p>
     </div>
   </div>
 </section>
@@ -217,25 +197,25 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="feature-section" id="features">
   <div class="container">
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">平台功能</div>
-      <h2 class="section-title">探索多元交易工具</h2>
-      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">透過多種平台、功能與教育內容，協助用戶了解不同交易方式。</p>
+      <div class="section-label">平台資訊</div>
+      <h2 class="section-title">平台功能與服務</h2>
+      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">本平台提供多種介面選項、帳戶功能、支援服務與一般教育內容，方便用戶了解可用資源。</p>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">超低點差</span><h2>Razor 帳戶｜點差低至 0.0 點</h2><p>透過一級流動性提供商的深度報價，Pepperstone 在主要外匯貨幣對上提供低至 0.0 點的點差；指數與大宗商品交易更享有免佣金優惠，有效降低交易成本。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Spreads"></div></div>
+      <div class="feature-text"><span class="badge">帳戶選項</span><h2>帳戶選項</h2><p>Pepperstone 提供不同帳戶類型與平台設定，相關產品資訊、費用內容與可用功能將依地區與帳戶配置而有所不同。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Accounts"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">極速執行</span><h2>高速且可靠的執行效率</h2><p>提供快速訂單處理與穩定的交易環境。Pepperstone 的基礎設施部署於全球多座數據中心，確保您無論身處何地，都能享有低延遲的下單體驗。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Execution"></div></div>
+      <div class="feature-text"><span class="badge">平台設施</span><h2>平台基礎設施</h2><p>平台由數位基礎設施支援，旨在提供穩定的帳戶存取與平台功能使用體驗。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Infrastructure"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">深度流動性</span><h2>一級銀行等級流動性</h2><p>Pepperstone 串接多家一級銀行與機構的流動性來源，為交易者提供深度報價與具競爭力的價格，即使在劇烈行情中也能維持穩定的成交品質。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Liquidity"></div></div>
+      <div class="feature-text"><span class="badge">教育資源</span><h2>教育內容</h2><p>提供一般性的教育內容，包含平台操作指南、市場術語說明及功能導覽，協助用戶有效使用平台。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Education"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">策略參考功能</span><h2>觀摩公開策略，啟發交易靈感</h2><p>可瀏覽其他交易者的公開策略資訊，作為市場研究參考。透過觀察不同交易者的思路與觀點，拓展您的交易視野。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Strategy"></div></div>
+      <div class="feature-text"><span class="badge">客戶支援</span><h2>支援服務</h2><p>提供多語言客戶支援，協助處理平台相關諮詢、帳戶問題及技術指導。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Support"></div></div>
     </div>
   </div>
 </section>
@@ -244,36 +224,14 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div class="platforms-intro">
       <div class="section-label">交易平台</div>
-      <h2 class="section-title">找到您的理想平台</h2>
-      <p>提供多種平台與工具選擇，方便用戶查看市場資訊與管理交易操作。</p>
+      <h2 class="section-title">可用的平台介面</h2>
+      <p>提供多種平台介面選項，功能可用性可能因帳戶類型與地區而異。</p>
     </div>
     <div class="platform-grid">
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>全球領先的圖表分析與社群交易平台，技術分析工具強大，社群策略豐富。</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>MetaTrader 進階版本，支援更廣泛的市場、更多元的訂單類型與更強大的分析功能。</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>經典外匯交易平台，支援 EA 自動交易、自訂指標與圖形辨識工具。</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>專業級交易平台，介面精美，內建豐富指標，並支援進階的策略自動化。</p></a>
-    </div>
-  </div>
-</section>
-
-<section class="comparison" id="comparison">
-  <div class="container">
-    <div class="comparison-intro">
-      <div class="section-label">平台比較</div>
-      <h2 class="section-title">平台快速比較</h2>
-      <p>一覽 Pepperstone 與其他主要平台在核心指標上的差異。</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>平台</th><th>評分</th><th>最低點差</th><th>支援平台</th><th>監管機構</th></tr></thead>
-        <tbody>
-          <tr class="hl"><td><span class="rank-badge gold">1</span></td><td class="broker-name">Pepperstone</td><td class="score">9.7</td><td>0.0 pips</td><td>MT4/MT5/TV/cTrader</td><td>ASIC · FCA · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">2</span></td><td class="broker-name">IC Markets</td><td class="score">9.2</td><td>0.1 pips</td><td>MT4/MT5/cTrader</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">3</span></td><td class="broker-name">XM Group</td><td class="score">8.8</td><td>0.6 pips</td><td>MT4/MT5</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">4</span></td><td class="broker-name">FP Markets</td><td class="score">8.5</td><td>0.1 pips</td><td>MT4/MT5/IRESS</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">5</span></td><td class="broker-name">Exness</td><td class="score">8.2</td><td>0.3 pips</td><td>MT4/MT5</td><td>FCA · CySEC</td></tr>
-        </tbody>
-      </table>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>圖表介面搭配社群功能，可直接於平台內進行操作。</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>進階介面，提供更廣泛的市場檢視、更多訂單類型與強化工具。</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>成熟穩定的介面，支援自動化功能、自訂指標及圖形辨識工具。</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>專業級介面，提供進階圖表、內建指標及自動化功能。</p></a>
     </div>
   </div>
 </section>
@@ -282,12 +240,12 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div style="text-align:center"><div class="section-label">常見問題</div><h2 class="section-title">常見問題</h2></div>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">什麼是外匯交易？該如何開始？</div><div class="faq-a"><div class="faq-a-inner">外匯交易是透過買賣不同國家的貨幣，從匯率波動中尋求獲利機會。您只需選擇一家受監管的券商（如 Pepperstone），完成開戶與入金，即可開始操作。建議新手先使用免費的模擬帳戶熟悉流程。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">什麼是「點差」？為什麼重要？</div><div class="faq-a"><div class="faq-a-inner">點差是買入價與賣出價之間的差額，也是交易時的主要成本之一。點差越低，每筆交易的成本就越少。Pepperstone 的 Razor 帳戶提供低至 0.0 點的點差，幫助您有效控制成本。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">需要準備多少資金才能開始交易？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 沒有最低入金門檻，您可以依自身狀況彈性決定。建議新手先從小額開始，搭配免費模擬帳戶充分練習後再逐步增加資金。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">什麼是模擬帳戶？為什麼建議先使用？</div><div class="faq-a"><div class="faq-a-inner">模擬帳戶使用虛擬資金，讓您在真實的市場環境中練習交易，完全沒有財務風險。這是熟悉平台操作、測試策略的最佳方式。Pepperstone 的模擬帳戶提供與真實帳戶一致的工具與功能。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">如何選擇適合自己的交易平台？</div><div class="faq-a"><div class="faq-a-inner">請依據您的交易經驗、所需的分析工具、是否需要自動化交易，以及行動裝置的操作體驗來綜合評估。Pepperstone 同時支援 MT4、MT5、TradingView 與 cTrader，可隨時彈性切換。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">外匯交易有哪些風險？</div><div class="faq-a"><div class="faq-a-inner">外匯交易使用槓桿，可能放大獲利但也同時放大虧損。主要風險包含市場波動、槓桿效應以及流動性風險。請務必設定停損、合理控制部位，並避免投入無法承受損失的資金。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">本網站提供哪些資訊？</div><div class="faq-a"><div class="faq-a-inner">本網站提供 Pepperstone 平台功能、帳戶選項、支援資源及教育內容的整體資訊，旨在協助支援地區的用戶了解可用服務。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">有哪些帳戶選項？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 提供不同類型的帳戶與配置方案。產品詳情、費用結構與可用功能依您所在地區及帳戶設定而異，請參閱相關產品揭露文件。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">是否提供模擬環境？</div><div class="faq-a"><div class="faq-a-inner">在可提供的地區，模擬環境允許用戶透過模擬條件熟悉平台介面與功能，再進一步了解其他帳戶選項。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">可以使用哪些平台？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 支援多種平台介面，包含 MetaTrader 4、MetaTrader 5、TradingView 及 cTrader。平台可用性可能因地區及帳戶類型而異。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">在哪裡可以查看風險與揭露資訊？</div><div class="faq-a"><div class="faq-a-inner">風險揭露、產品資訊及帳戶條款可於 Pepperstone 網站上查閱。建議在使用任何市場相關功能前，仔細閱讀相關文件。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">如何聯繫客服？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 提供多語言客戶支援，協助處理平台相關諮詢、帳戶問題及技術指導。客服可用性可能因地區而異。</div></div></div>
     </div>
   </div>
 </section>
@@ -297,20 +255,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="cta-box">
       <div class="cta-content">
         <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:30px;margin-bottom:24px">
-        <h2>開始更聰明的交易</h2>
-        <p>加入全球逾 83 萬名交易者的行列，親身體驗極速成交與超低點差帶來的交易優勢。立即免費開戶，亦可先透過模擬帳戶練習。</p>
+        <h2>進一步了解平台資訊</h2>
+        <p>查看平台功能、帳戶選項、支援資源及重要法律與風險揭露內容。</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#" class="btn-primary register-link">免費開設帳戶 →</a>
-          <a href="#" class="btn-outline register-link" data-demo="true">試用模擬帳戶</a>
+          <a href="#" class="btn-primary register-link">了解更多 →</a>
+          <a href="#" class="btn-outline register-link">查看揭露說明</a>
         </div>
       </div>
       <div class="cta-checklist">
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Razor 帳戶點差低至 0.0 點</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>支援 MT4 / MT5 / TradingView / cTrader</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>受 ASIC、FCA、CySEC 等頂級機構監管</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>免費模擬帳戶，零風險體驗</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>24/5 全天候多語言客服支援</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>每月成交金額逾 1 兆澳幣</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>可提供多種平台介面選項</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>帳戶選項可能因地區而異</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>網站提供支援資源</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>可能提供模擬功能</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>提供多語言客服支援</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>網站提供法律與風險揭露資訊</span></div>
       </div>
     </div>
   </div>
@@ -321,11 +279,11 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="footer-top">
       <div class="footer-brand">
         <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone">
-        <p>Pepperstone 提供涵蓋外匯、指數、大宗商品、加密貨幣及股票的多元市場資訊與交易功能。</p>
+        <p>本網站提供 Pepperstone 平台功能、帳戶選項、教育資源與支援內容的整體資訊。</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h4>Navigation</h4><a href="#guide">新手入門</a><a href="#features">核心優勢</a><a href="#platforms">交易平台</a><a href="#faq">常見問題</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="#">外匯術語</a><a href="#">風險管理</a><a href="#">技術分析入門</a><a href="#">關於我們</a></div>
+        <div class="footer-col"><h4>Navigation</h4><a href="#guide">使用入門</a><a href="#features">平台資訊</a><a href="#platforms">交易平台</a><a href="#faq">常見問題</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="#">平台條款</a><a href="#">風險揭露</a><a href="#">產品資訊</a><a href="#">關於我們</a></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -343,23 +301,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     var params = new URLSearchParams(window.location.search);
     var u = {};
     params.forEach(function(v, k) {
-      if (k.toLowerCase().indexOf('utm') === 0) {
-        u[k] = v;
-      }
+      if (k.toLowerCase().indexOf('utm') === 0) { u[k] = v; }
     });
     return u;
   }
-  function buildURL(isDemo) {
+  function buildURL() {
     var url = new URL(BASE_URL);
     Object.keys(BASE_PARAMS).forEach(function(k) { url.searchParams.set(k, BASE_PARAMS[k]); });
-    if(isDemo) url.searchParams.set('accountType','demo');
     var utm = getUTMParams();
     Object.keys(utm).forEach(function(k) { url.searchParams.set(k, utm[k]); });
     return url.toString();
   }
   function apply() {
     document.querySelectorAll('.register-link').forEach(function(el) {
-      el.href = buildURL(el.getAttribute('data-demo')==='true');
+      el.href = buildURL();
       el.setAttribute('target','_blank');
       el.setAttribute('rel','noopener');
     });

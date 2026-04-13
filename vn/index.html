@@ -3,19 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pepperstone — Hướng dẫn giao dịch cho người mới | Công cụ giao dịch đa thị trường</title>
-<meta name="description" content="Hướng dẫn giao dịch Forex dành cho người mới bắt đầu. Tìm hiểu cách chọn nền tảng phù hợp, nắm vững kiến thức cơ bản và xây dựng chiến lược quản lý rủi ro.">
+<title>Pepperstone — Tổng quan nền tảng và Hướng dẫn bắt đầu</title>
+<meta name="description" content="Khám phá tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục của Pepperstone.">
 <link rel="shortcut icon" href="../assets/image/favicon.ico" type="image/x-icon">
-<link rel="icon" href="../assets/image/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;--bg-elevated:#1a2233;
+  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;
   --border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);
   --border-accent:rgba(0,100,250,0.3);--text:#e6e8f0;--text-sub:#9ba1b8;--text-muted:#555c75;
   --pp-blue:#0064FA;--pp-blue-light:#3388ff;--pp-blue-glow:rgba(0,100,250,0.08);
-  --accent:#00c896;--gold:#f5c842;
+  --gold:#f5c842;
   --font-display:'Plus Jakarta Sans',sans-serif;--font-body:'Noto Sans TC',sans-serif;--font-mono:'Space Mono',monospace;
   --radius:12px;--radius-lg:20px;--max-w:1200px;--ease:0.3s cubic-bezier(0.4,0,0.2,1);
 }
@@ -50,9 +49,8 @@ nav a:hover{color:var(--text)}
 .hero h1 em{font-style:normal;color:var(--pp-blue-light)}
 .hero-desc{color:var(--text-sub);font-size:16px;line-height:1.8;margin-bottom:32px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
-.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
-.hero-stat-value{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--pp-blue-light)}
-.hero-stat-label{font-size:12px;color:var(--text-muted);margin-top:2px}
+.hero-pills{display:flex;gap:16px;flex-wrap:wrap}
+.hero-pill{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:12px 20px;font-size:14px;color:var(--text-sub);font-weight:500}
 .hero-visual img{max-width:100%;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(0,100,250,0.15))}
 .awards-bar{padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .awards-bar img{max-height:48px;margin:0 auto;opacity:0.85;max-width:100%;object-fit:contain}
@@ -86,22 +84,6 @@ nav a:hover{color:var(--text)}
 .platform-icon{font-size:36px;margin-bottom:16px}
 .platform-card h3{font-family:var(--font-display);font-weight:700;font-size:16px;margin-bottom:8px}
 .platform-card p{font-size:13px;color:var(--text-muted);line-height:1.6}
-.comparison{padding:80px 0}
-.comparison-intro{text-align:center;max-width:700px;margin:0 auto 40px}
-.comparison-intro p{color:var(--text-sub);font-size:15px;margin-top:12px}
-.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--border)}
-table{width:100%;border-collapse:collapse;min-width:700px}
-thead th{background:var(--bg-card);padding:16px 20px;text-align:left;font-family:var(--font-display);font-weight:600;font-size:13px;color:var(--text-sub);border-bottom:1px solid var(--border);white-space:nowrap}
-tbody td{padding:16px 20px;font-size:13px;border-bottom:1px solid var(--border);color:var(--text-sub);vertical-align:middle}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:var(--bg-surface)}
-tbody tr.hl{background:var(--pp-blue-glow)}
-tbody tr.hl td{color:var(--text)}
-.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:7px;font-size:12px;font-weight:700;font-family:var(--font-display)}
-.rank-badge.gold{background:rgba(245,200,66,0.12);color:var(--gold);border:1px solid rgba(245,200,66,0.2)}
-.rank-badge.normal{background:var(--bg-surface);color:var(--text-muted)}
-.broker-name{font-weight:600;color:var(--text)}
-.score{font-family:var(--font-mono);font-weight:700;color:var(--pp-blue-light)}
 .faq{padding:100px 0}
 .faq-list{max-width:800px;margin:48px auto 0}
 .faq-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;background:var(--bg-card);transition:var(--ease)}
@@ -136,15 +118,13 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   .feature-row:nth-child(even) .feature-text{order:1}
   .feature-row:nth-child(even) .feature-img{order:2}
   .guide-steps,.platform-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{flex-direction:column}
-  nav{display:none}.mobile-toggle{display:block}
+  .footer-top{flex-direction:column}nav{display:none}.mobile-toggle{display:block}
 }
 @media(max-width:600px){
   .guide-steps,.platform-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;align-items:flex-start}
-  .hero-stats{flex-direction:column;gap:16px}
-  .cta-box{padding:32px}
-  .footer-links{flex-direction:column;gap:24px}
+  .hero-pills{flex-direction:column;gap:10px}
+  .cta-box{padding:32px}.footer-links{flex-direction:column;gap:24px}
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .anim{opacity:0;animation:fadeUp 0.7s ease forwards}.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
@@ -156,34 +136,34 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <a href="/"><img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" class="logo-img"></a>
     <nav id="mainNav">
       <a href="#guide">Bắt đầu</a>
-      <a href="#features">Ưu điểm</a>
-      <a href="#platforms">Nền tảng</a>
+      <a href="#features">Nền tảng</a>
+      <a href="#platforms">Giao diện</a>
       <a href="#faq">Hỏi đáp</a>
-      <a href="#" class="nav-cta register-link">Mở tài khoản</a>
+      <a href="#" class="nav-cta register-link">Tìm hiểu thêm</a>
     </nav>
     <button class="mobile-toggle" onclick="document.getElementById('mainNav').style.display=document.getElementById('mainNav').style.display==='flex'?'none':'flex'">☰</button>
   </div>
 </header>
-<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="#" style="color:var(--pp-blue-light)">Tiếng Việt</a></div>
+<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/" style="color:var(--pp-blue-light)">Tiếng Việt</a></div>
 
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
       <div>
         <div class="badge anim" style="margin-bottom:20px">Pepperstone · 2026</div>
-        <h1 class="anim d1">Khám phá<br><em>Công cụ giao dịch đa thị trường</em></h1>
-        <p class="hero-desc anim d2">Tiếp cận thông tin thị trường và các công cụ giao dịch trên nhiều lĩnh vực — Forex, chỉ số, hàng hóa, tiền điện tử và cổ phiếu — cùng tính năng theo dõi chiến lược từ các nhà giao dịch khác.</p>
+        <h1 class="anim d1">Chào mừng đến với<br><em>Tổng quan nền tảng Pepperstone</em></h1>
+        <p class="hero-desc anim d2">Trang web này cung cấp thông tin tổng quan về tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục của Pepperstone, giúp người dùng tại các khu vực được hỗ trợ tìm hiểu về các dịch vụ có sẵn.</p>
         <div class="hero-btns anim d3">
-          <a href="#" class="btn-primary register-link">Mở tài khoản miễn phí →</a>
-          <a href="#guide" class="btn-outline">Xem cách bắt đầu ↓</a>
+          <a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a>
+          <a href="#guide" class="btn-outline">Xem hướng dẫn bắt đầu ↓</a>
         </div>
-        <div class="hero-stats anim d4">
-          <div><div class="hero-stat-value">830K+</div><div class="hero-stat-label">Nhà giao dịch trên toàn cầu</div></div>
-          <div><div class="hero-stat-value">$1T+</div><div class="hero-stat-label">Khối lượng giao dịch/tháng (AUD)</div></div>
-          <div><div class="hero-stat-value">1,200+</div><div class="hero-stat-label">Sản phẩm có thể giao dịch</div></div>
+        <div class="hero-pills anim d4">
+          <div class="hero-pill">📊 Tính năng nền tảng</div>
+          <div class="hero-pill">👤 Tùy chọn tài khoản</div>
+          <div class="hero-pill">💬 Tài nguyên hỗ trợ</div>
         </div>
       </div>
-      <div class="anim d3"><img src="../assets/image/FeaturedCards_01.png" alt="Trading Platform"></div>
+      <div class="anim d3"><img src="../assets/image/FeaturedCards_01.png" alt="Platform"></div>
     </div>
   </div>
 </section>
@@ -193,23 +173,23 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="edu-section" id="guide">
   <div class="container">
     <div class="edu-intro">
-      <div class="section-label">Bắt đầu giao dịch</div>
-      <h2 class="section-title">4 bước khởi đầu giao dịch Forex</h2>
-      <p>Dù bạn mới tìm hiểu về thị trường tài chính hay muốn nâng cao kỹ năng giao dịch, 4 bước dưới đây sẽ giúp bạn xây dựng nền tảng vững chắc.</p>
+      <div class="section-label">Bắt đầu</div>
+      <h2 class="section-title">Hướng dẫn bắt đầu sử dụng nền tảng</h2>
+      <p>Nếu đây là lần đầu tiên quý vị tìm hiểu về nền tảng, các nội dung sau sẽ giúp quý vị nắm được cách truy cập tài khoản, công cụ nền tảng, tài nguyên giáo dục và dịch vụ hỗ trợ.</p>
     </div>
     <div class="guide-steps">
-      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📚</div><h3>Nắm vững kiến thức nền</h3><p>Forex là thị trường tài chính lớn nhất thế giới với khối lượng giao dịch hơn 6 nghìn tỷ USD mỗi ngày. Bước đầu tiên là hiểu rõ cặp tiền tệ, spread và đòn bẩy hoạt động như thế nào.</p></div>
-      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🖥️</div><h3>Chọn nền tảng phù hợp</h3><p>Nền tảng tốt cần được quản lý bởi cơ quan uy tín, có tốc độ khớp lệnh ổn định, spread cạnh tranh và đầy đủ công cụ phân tích kỹ thuật.</p></div>
-      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🎯</div><h3>Thực hành với tài khoản Demo</h3><p>Trước khi dùng tiền thật, hãy mở tài khoản Demo để làm quen với giao diện, thử nghiệm các chiến lược và quan sát diễn biến thị trường thực tế.</p></div>
-      <div class="step-card"><div class="step-num">04</div><div class="step-icon">🛡️</div><h3>Xây dựng kỹ năng quản lý rủi ro</h3><p>Đặt Stop Loss, kiểm soát khối lượng lệnh và phân bổ vốn hợp lý — đó là chìa khóa để bảo vệ tài khoản. Nhà giao dịch giỏi trước hết phải là người quản lý rủi ro tốt.</p></div>
+      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📋</div><h3>Tìm hiểu thông tin cơ bản</h3><p>Khuyến nghị bắt đầu bằng việc tìm hiểu các thuật ngữ phổ biến trên nền tảng, cách thiết lập tài khoản và các tài liệu công bố sản phẩm quan trọng trước khi khám phá các tính năng.</p></div>
+      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🔍</div><h3>Khám phá công cụ có sẵn</h3><p>Người dùng có thể xem các giao diện, công cụ biểu đồ và tính năng tài khoản khác nhau để đánh giá xem cấu hình và khả năng có phù hợp với nhu cầu của mình không.</p></div>
+      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🖥️</div><h3>Trải nghiệm môi trường Demo</h3><p>Nếu có sẵn môi trường Demo, người dùng có thể làm quen với giao diện và cấu hình tính năng trước khi tìm hiểu thêm về các tùy chọn tài khoản khác.</p></div>
+      <div class="step-card"><div class="step-num">04</div><div class="step-icon">📄</div><h3>Xem thông tin rủi ro</h3><p>Trước khi sử dụng bất kỳ tính năng liên quan đến thị trường nào, chúng tôi khuyến nghị đọc kỹ tài liệu công bố, thông tin sản phẩm và điều khoản tài khoản của nền tảng.</p></div>
     </div>
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">Ưu điểm</div>
-      <h2 class="section-title">Vì sao hơn 830.000 nhà giao dịch chọn Pepperstone?</h2>
+      <div class="section-label">Giới thiệu</div>
+      <h2 class="section-title">Giới thiệu nền tảng Pepperstone</h2>
     </div>
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;text-align:center;margin-bottom:60px">
       <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:36px;margin:0 auto 20px">
-      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Khớp lệnh cực nhanh, spread siêu thấp, và tự do lựa chọn nền tảng theo ý thích — đó là lý do Pepperstone luôn là lựa chọn hàng đầu.</p>
+      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Pepperstone cung cấp quyền truy cập nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục cho người dùng tại các khu vực được hỗ trợ.</p>
     </div>
   </div>
 </section>
@@ -217,25 +197,25 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="feature-section" id="features">
   <div class="container">
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">Điểm nổi bật</div>
-      <h2 class="section-title">Được xây dựng cho nhà giao dịch chuyên nghiệp</h2>
-      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">Từ spread thấp đến thanh khoản cấp tổ chức, mọi tính năng đều được thiết kế để tạo lợi thế cho bạn.</p>
+      <div class="section-label">Nền tảng</div>
+      <h2 class="section-title">Tính năng và dịch vụ nền tảng</h2>
+      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">Nền tảng cung cấp nhiều tùy chọn giao diện, tính năng tài khoản, dịch vụ hỗ trợ và nội dung giáo dục tổng quát để người dùng khám phá.</p>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Spread thấp</span><h2>Tài khoản Razor — Spread từ 0.0 pip</h2><p>Giao dịch các cặp tiền tệ chính với spread từ 0.0 pip nhờ nguồn thanh khoản sâu từ các nhà cung cấp Tier-1. Giao dịch chỉ số và hàng hóa hoàn toàn miễn phí hoa hồng.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Spreads"></div></div>
+      <div class="feature-text"><span class="badge">Tài khoản</span><h2>Tùy chọn tài khoản</h2><p>Pepperstone cung cấp nhiều loại tài khoản và cấu hình nền tảng khác nhau. Thông tin sản phẩm, cấu trúc phí và tính năng có sẵn có thể khác nhau theo khu vực và thiết lập tài khoản.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Accounts"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Khớp lệnh nhanh</span><h2>Tốc độ đáng tin cậy, ổn định mọi lúc</h2><p>Lệnh được xử lý nhanh chóng qua mạng lưới máy chủ phân bố toàn cầu, mang đến trải nghiệm giao dịch có độ trễ thấp dù bạn ở bất kỳ đâu.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Execution"></div></div>
+      <div class="feature-text"><span class="badge">Hạ tầng</span><h2>Hạ tầng nền tảng</h2><p>Nền tảng được hỗ trợ bởi hạ tầng kỹ thuật số, được thiết kế để cung cấp trải nghiệm truy cập tài khoản và sử dụng tính năng ổn định.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Infrastructure"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Thanh khoản sâu</span><h2>Thanh khoản từ ngân hàng quốc tế hàng đầu</h2><p>Pepperstone kết nối với nhiều nguồn thanh khoản từ các ngân hàng và tổ chức Tier-1, đảm bảo giá cạnh tranh và khớp lệnh ổn định ngay cả khi thị trường biến động mạnh.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Liquidity"></div></div>
+      <div class="feature-text"><span class="badge">Giáo dục</span><h2>Tài nguyên giáo dục</h2><p>Truy cập nội dung giáo dục tổng quát bao gồm hướng dẫn nền tảng, thuật ngữ thị trường và giới thiệu tính năng để giúp quý vị sử dụng nền tảng hiệu quả.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Education"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Tham khảo chiến lược</span><h2>Học hỏi từ chiến lược của các nhà giao dịch khác</h2><p>Xem các chiến lược được chia sẻ công khai để tham khảo và nghiên cứu. Mở rộng góc nhìn của bạn bằng cách quan sát cách tiếp cận thị trường của những người đi trước.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Strategy"></div></div>
+      <div class="feature-text"><span class="badge">Hỗ trợ</span><h2>Dịch vụ hỗ trợ</h2><p>Dịch vụ hỗ trợ khách hàng đa ngôn ngữ sẵn sàng giải đáp các thắc mắc về nền tảng, câu hỏi liên quan đến tài khoản và hướng dẫn kỹ thuật.</p><a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Support"></div></div>
     </div>
   </div>
 </section>
@@ -243,37 +223,15 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="platforms" id="platforms">
   <div class="container">
     <div class="platforms-intro">
-      <div class="section-label">Nền tảng giao dịch</div>
-      <h2 class="section-title">Chọn nền tảng phù hợp với bạn</h2>
-      <p>4 nền tảng hàng đầu thế giới, một tài khoản dùng cho tất cả. Chọn công cụ phù hợp với phong cách giao dịch của bạn.</p>
+      <div class="section-label">Giao diện</div>
+      <h2 class="section-title">Các giao diện nền tảng có sẵn</h2>
+      <p>Có nhiều giao diện nền tảng để lựa chọn. Tính năng có sẵn có thể khác nhau theo loại tài khoản và khu vực.</p>
     </div>
     <div class="platform-grid">
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>Biểu đồ mạnh mẽ, cộng đồng sôi động, khớp lệnh trực tiếp ngay trên nền tảng.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>Phiên bản nâng cấp với thị trường rộng hơn, nhiều loại lệnh hơn và công cụ phân tích mạnh hơn.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>Nền tảng kinh điển được tin dùng — hỗ trợ EA tự động, chỉ báo tùy chỉnh và nhận diện mô hình.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>Giao diện gọn đẹp, biểu đồ chuyên sâu và hệ thống algo trading tích hợp sẵn.</p></a>
-    </div>
-  </div>
-</section>
-
-<section class="comparison" id="comparison">
-  <div class="container">
-    <div class="comparison-intro">
-      <div class="section-label">So sánh</div>
-      <h2 class="section-title">Pepperstone so với các nền tảng khác</h2>
-      <p>Nhanh chóng so sánh các chỉ số quan trọng giữa Pepperstone và các sàn lớn khác.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Sàn giao dịch</th><th>Điểm</th><th>Spread tối thiểu</th><th>Nền tảng</th><th>Giấy phép</th></tr></thead>
-        <tbody>
-          <tr class="hl"><td><span class="rank-badge gold">1</span></td><td class="broker-name">Pepperstone</td><td class="score">9.7</td><td>0.0 pips</td><td>MT4/MT5/TV/cTrader</td><td>ASIC · FCA · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">2</span></td><td class="broker-name">IC Markets</td><td class="score">9.2</td><td>0.1 pips</td><td>MT4/MT5/cTrader</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">3</span></td><td class="broker-name">XM Group</td><td class="score">8.8</td><td>0.6 pips</td><td>MT4/MT5</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">4</span></td><td class="broker-name">FP Markets</td><td class="score">8.5</td><td>0.1 pips</td><td>MT4/MT5/IRESS</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">5</span></td><td class="broker-name">Exness</td><td class="score">8.2</td><td>0.3 pips</td><td>MT4/MT5</td><td>FCA · CySEC</td></tr>
-        </tbody>
-      </table>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>Giao diện biểu đồ tích hợp tính năng cộng đồng và truy cập nền tảng trực tiếp.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>Giao diện mở rộng với tầm nhìn thị trường rộng hơn, thêm loại lệnh và công cụ nâng cao.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>Giao diện được công nhận rộng rãi, hỗ trợ tính năng tự động, chỉ báo tùy chỉnh và công cụ mẫu.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>Giao diện chuyên nghiệp với biểu đồ nâng cao, chỉ báo tích hợp và khả năng tự động hóa.</p></a>
     </div>
   </div>
 </section>
@@ -282,12 +240,12 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div style="text-align:center"><div class="section-label">Hỏi đáp</div><h2 class="section-title">Câu hỏi thường gặp</h2></div>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Forex là gì? Làm sao để bắt đầu?</div><div class="faq-a"><div class="faq-a-inner">Forex là thị trường mua bán ngoại tệ nhằm kiếm lợi nhuận từ biến động tỷ giá. Để bắt đầu, bạn chỉ cần mở tài khoản tại một sàn uy tín như Pepperstone, nạp tiền và bắt đầu giao dịch. Nếu mới bắt đầu, hãy thử bước đầu với tài khoản Demo miễn phí.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">'Spread' là gì và tại sao nó quan trọng?</div><div class="faq-a"><div class="faq-a-inner">Spread là khoảng chênh lệch giữa giá mua và giá bán — đây là một trong những chi phí chính khi giao dịch. Spread càng hẹp, chi phí mỗi lệnh càng thấp. Tài khoản Razor của Pepperstone có spread từ 0.0 pip cho các cặp tiền chính.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Cần bao nhiêu vốn để bắt đầu giao dịch?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone không yêu cầu số tiền nạp tối thiểu — bạn có thể bắt đầu với bất kỳ mức nào phù hợp. Nếu mới bắt đầu, hãy khởi đầu với số vốn nhỏ và tận dụng tài khoản Demo miễn phí để rèn luyện.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Tài khoản Demo là gì? Có nên dùng trước không?</div><div class="faq-a"><div class="faq-a-inner">Tài khoản Demo cho phép bạn giao dịch trong điều kiện thị trường thực bằng tiền ảo, hoàn toàn không rủi ro tài chính. Đây là cách tốt nhất để tìm hiểu nền tảng và thử nghiệm chiến lược. Pepperstone cung cấp Demo miễn phí với đầy đủ công cụ như tài khoản thật.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Nên chọn nền tảng giao dịch nào?</div><div class="faq-a"><div class="faq-a-inner">Tùy thuộc vào kinh nghiệm và nhu cầu của bạn. TradingView phù hợp với người thích phân tích biểu đồ; cTrader dành cho giao dịch thuật toán; MT4/MT5 là lựa chọn đa năng phù hợp mọi cấp độ. Pepperstone hỗ trợ cả 4 nền tảng, bạn có thể chuyển đổi bất cứ lúc nào.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Giao dịch Forex có rủi ro gì?</div><div class="faq-a"><div class="faq-a-inner">Giao dịch Forex sử dụng đòn bẩy — có thể khuếch đại lợi nhuận nhưng cũng khuếch đại thua lỗ. Rủi ro chính bao gồm biến động thị trường và tác động của đòn bẩy. Luôn đặt Stop Loss, kiểm soát khối lượng lệnh, và tuyệt đối không đầu tư số tiền mà bạn không thể chấp nhận mất.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Trang web này cung cấp thông tin gì?</div><div class="faq-a"><div class="faq-a-inner">Trang web này cung cấp tổng quan về tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục của Pepperstone, nhằm giúp người dùng tại các khu vực được hỗ trợ hiểu về các dịch vụ có sẵn.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Có những tùy chọn tài khoản nào?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone cung cấp nhiều loại tài khoản với các cấu hình khác nhau. Chi tiết sản phẩm, cấu trúc phí và tính năng có sẵn phụ thuộc vào khu vực và thiết lập tài khoản. Vui lòng tham khảo tài liệu công bố sản phẩm liên quan.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Có môi trường Demo không?</div><div class="faq-a"><div class="faq-a-inner">Tại các khu vực có sẵn, môi trường Demo cho phép người dùng làm quen với giao diện và tính năng nền tảng trong điều kiện mô phỏng, trước khi tìm hiểu các tùy chọn tài khoản khác.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Có thể truy cập những nền tảng nào?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone hỗ trợ nhiều giao diện nền tảng bao gồm MetaTrader 4, MetaTrader 5, TradingView và cTrader. Khả năng sử dụng có thể khác nhau theo khu vực và loại tài khoản.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Xem thông tin rủi ro và công bố ở đâu?</div><div class="faq-a"><div class="faq-a-inner">Tài liệu công bố rủi ro, thông tin sản phẩm và điều khoản tài khoản có sẵn trên trang web Pepperstone. Chúng tôi khuyến nghị đọc kỹ các tài liệu này trước khi sử dụng bất kỳ tính năng liên quan đến thị trường nào.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Liên hệ hỗ trợ bằng cách nào?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone cung cấp dịch vụ hỗ trợ khách hàng đa ngôn ngữ để giải đáp thắc mắc về nền tảng, câu hỏi về tài khoản và hướng dẫn kỹ thuật. Khả năng hỗ trợ có thể khác nhau theo khu vực.</div></div></div>
     </div>
   </div>
 </section>
@@ -297,20 +255,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="cta-box">
       <div class="cta-content">
         <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:30px;margin-bottom:24px">
-        <h2>Sẵn sàng giao dịch thông minh hơn?</h2>
-        <p>Tham gia cùng hơn 830.000 nhà giao dịch trên toàn thế giới. Trải nghiệm tốc độ khớp lệnh nhanh, spread thấp và nền tảng được thiết kế cho bạn. Mở tài khoản miễn phí chỉ trong vài phút.</p>
+        <h2>Tìm hiểu thêm về nền tảng</h2>
+        <p>Xem tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và thông tin pháp lý cùng công bố rủi ro quan trọng.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#" class="btn-primary register-link">Mở tài khoản miễn phí →</a>
-          <a href="#" class="btn-outline register-link" data-demo="true">Dùng thử tài khoản Demo</a>
+          <a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a>
+          <a href="#" class="btn-outline register-link">Xem tài liệu công bố</a>
         </div>
       </div>
       <div class="cta-checklist">
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Tài khoản Razor — spread từ 0.0 pip</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Hỗ trợ MT4 / MT5 / TradingView / cTrader</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Quản lý bởi ASIC, FCA, CySEC và nhiều hơn nữa</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Tài khoản Demo miễn phí, không rủi ro</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Hỗ trợ khách hàng đa ngôn ngữ 24/5</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Khối lượng giao dịch mỗi tháng trên 1 nghìn tỷ AUD</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Nhiều tùy chọn giao diện nền tảng có sẵn</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Tùy chọn tài khoản có thể khác nhau theo khu vực</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Trang web cung cấp tài nguyên hỗ trợ</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Có thể có môi trường Demo</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Cung cấp hỗ trợ khách hàng đa ngôn ngữ</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Trang web cung cấp thông tin pháp lý và công bố rủi ro</span></div>
       </div>
     </div>
   </div>
@@ -321,11 +279,11 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="footer-top">
       <div class="footer-brand">
         <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone">
-        <p>Pepperstone cung cấp quyền truy cập vào các thị trường toàn cầu bao gồm Forex, chỉ số, hàng hóa, tiền điện tử và cổ phiếu thông qua nền tảng đạt giải thưởng.</p>
+        <p>Trang web này cung cấp tổng quan về tính năng nền tảng, tùy chọn tài khoản, tài nguyên giáo dục và nội dung hỗ trợ của Pepperstone.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h4>Navigation</h4><a href="#guide">Bắt đầu</a><a href="#features">Ưu điểm</a><a href="#platforms">Nền tảng</a><a href="#faq">Hỏi đáp</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="#">Thuật ngữ Forex</a><a href="#">Quản lý rủi ro</a><a href="#">Phân tích kỹ thuật</a><a href="#">Về chúng tôi</a></div>
+        <div class="footer-col"><h4>Navigation</h4><a href="#guide">Bắt đầu</a><a href="#features">Nền tảng</a><a href="#platforms">Giao diện</a><a href="#faq">Hỏi đáp</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="#">Điều khoản nền tảng</a><a href="#">Công bố rủi ro</a><a href="#">Thông tin sản phẩm</a><a href="#">Về chúng tôi</a></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -343,23 +301,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     var params = new URLSearchParams(window.location.search);
     var u = {};
     params.forEach(function(v, k) {
-      if (k.toLowerCase().indexOf('utm') === 0) {
-        u[k] = v;
-      }
+      if (k.toLowerCase().indexOf('utm') === 0) { u[k] = v; }
     });
     return u;
   }
-  function buildURL(isDemo) {
+  function buildURL() {
     var url = new URL(BASE_URL);
     Object.keys(BASE_PARAMS).forEach(function(k) { url.searchParams.set(k, BASE_PARAMS[k]); });
-    if(isDemo) url.searchParams.set('accountType','demo');
     var utm = getUTMParams();
     Object.keys(utm).forEach(function(k) { url.searchParams.set(k, utm[k]); });
     return url.toString();
   }
   function apply() {
     document.querySelectorAll('.register-link').forEach(function(el) {
-      el.href = buildURL(el.getAttribute('data-demo')==='true');
+      el.href = buildURL();
       el.setAttribute('target','_blank');
       el.setAttribute('rel','noopener');
     });

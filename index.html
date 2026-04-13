@@ -3,19 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pepperstone — Your Guide to Getting Started in Trading</title>
-<meta name="description" content="A practical guide to forex trading. Learn how to get started, pick the right platform, and build sound risk management habits.">
+<title>Pepperstone — Platform Overview & Getting Started Guide</title>
+<meta name="description" content="Explore Pepperstone platform features, account options, support resources and educational content. Learn how to get started in supported regions.">
 <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
-<link rel="icon" href="assets/image/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;--bg-elevated:#1a2233;
+  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;
   --border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);
   --border-accent:rgba(0,100,250,0.3);--text:#e6e8f0;--text-sub:#9ba1b8;--text-muted:#555c75;
   --pp-blue:#0064FA;--pp-blue-light:#3388ff;--pp-blue-glow:rgba(0,100,250,0.08);
-  --accent:#00c896;--gold:#f5c842;
+  --gold:#f5c842;
   --font-display:'Plus Jakarta Sans',sans-serif;--font-body:'Noto Sans TC',sans-serif;--font-mono:'Space Mono',monospace;
   --radius:12px;--radius-lg:20px;--max-w:1200px;--ease:0.3s cubic-bezier(0.4,0,0.2,1);
 }
@@ -50,9 +49,8 @@ nav a:hover{color:var(--text)}
 .hero h1 em{font-style:normal;color:var(--pp-blue-light)}
 .hero-desc{color:var(--text-sub);font-size:16px;line-height:1.8;margin-bottom:32px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
-.hero-stats{display:flex;gap:32px;flex-wrap:wrap}
-.hero-stat-value{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--pp-blue-light)}
-.hero-stat-label{font-size:12px;color:var(--text-muted);margin-top:2px}
+.hero-pills{display:flex;gap:16px;flex-wrap:wrap}
+.hero-pill{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:12px 20px;font-size:14px;color:var(--text-sub);font-weight:500}
 .hero-visual img{max-width:100%;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(0,100,250,0.15))}
 .awards-bar{padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .awards-bar img{max-height:48px;margin:0 auto;opacity:0.85;max-width:100%;object-fit:contain}
@@ -86,22 +84,6 @@ nav a:hover{color:var(--text)}
 .platform-icon{font-size:36px;margin-bottom:16px}
 .platform-card h3{font-family:var(--font-display);font-weight:700;font-size:16px;margin-bottom:8px}
 .platform-card p{font-size:13px;color:var(--text-muted);line-height:1.6}
-.comparison{padding:80px 0}
-.comparison-intro{text-align:center;max-width:700px;margin:0 auto 40px}
-.comparison-intro p{color:var(--text-sub);font-size:15px;margin-top:12px}
-.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--border)}
-table{width:100%;border-collapse:collapse;min-width:700px}
-thead th{background:var(--bg-card);padding:16px 20px;text-align:left;font-family:var(--font-display);font-weight:600;font-size:13px;color:var(--text-sub);border-bottom:1px solid var(--border);white-space:nowrap}
-tbody td{padding:16px 20px;font-size:13px;border-bottom:1px solid var(--border);color:var(--text-sub);vertical-align:middle}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:var(--bg-surface)}
-tbody tr.hl{background:var(--pp-blue-glow)}
-tbody tr.hl td{color:var(--text)}
-.rank-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:7px;font-size:12px;font-weight:700;font-family:var(--font-display)}
-.rank-badge.gold{background:rgba(245,200,66,0.12);color:var(--gold);border:1px solid rgba(245,200,66,0.2)}
-.rank-badge.normal{background:var(--bg-surface);color:var(--text-muted)}
-.broker-name{font-weight:600;color:var(--text)}
-.score{font-family:var(--font-mono);font-weight:700;color:var(--pp-blue-light)}
 .faq{padding:100px 0}
 .faq-list{max-width:800px;margin:48px auto 0}
 .faq-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;background:var(--bg-card);transition:var(--ease)}
@@ -136,15 +118,13 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   .feature-row:nth-child(even) .feature-text{order:1}
   .feature-row:nth-child(even) .feature-img{order:2}
   .guide-steps,.platform-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{flex-direction:column}
-  nav{display:none}.mobile-toggle{display:block}
+  .footer-top{flex-direction:column}nav{display:none}.mobile-toggle{display:block}
 }
 @media(max-width:600px){
   .guide-steps,.platform-grid{grid-template-columns:1fr}
   .hero-btns{flex-direction:column;align-items:flex-start}
-  .hero-stats{flex-direction:column;gap:16px}
-  .cta-box{padding:32px}
-  .footer-links{flex-direction:column;gap:24px}
+  .hero-pills{flex-direction:column;gap:10px}
+  .cta-box{padding:32px}.footer-links{flex-direction:column;gap:24px}
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .anim{opacity:0;animation:fadeUp 0.7s ease forwards}.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}
@@ -156,34 +136,34 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <a href="/"><img src="assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" class="logo-img"></a>
     <nav id="mainNav">
       <a href="#guide">Getting Started</a>
-      <a href="#features">Why Pepperstone</a>
+      <a href="#features">Platform</a>
       <a href="#platforms">Platforms</a>
       <a href="#faq">FAQ</a>
-      <a href="#" class="nav-cta register-link">Open Account</a>
+      <a href="#" class="nav-cta register-link">Learn More</a>
     </nav>
     <button class="mobile-toggle" onclick="document.getElementById('mainNav').style.display=document.getElementById('mainNav').style.display==='flex'?'none':'flex'">☰</button>
   </div>
 </header>
-<div class="lang-bar"><a href="#" style="color:var(--pp-blue-light)">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
+<div class="lang-bar"><a href="/" style="color:var(--pp-blue-light)">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
 
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
       <div>
         <div class="badge anim" style="margin-bottom:20px">Pepperstone · 2026</div>
-        <h1 class="anim d1">Discover<br><em>Smarter Ways to Trade</em></h1>
-        <p class="hero-desc anim d2">Explore market insights and trading tools across forex, indices, commodities, crypto and equities — backed by advanced platforms and strategy-sharing features.</p>
+        <h1 class="anim d1">Welcome to<br><em>Pepperstone Platform Overview</em></h1>
+        <p class="hero-desc anim d2">This website provides an overview of Pepperstone's platform features, account options, support resources and educational content, helping users in supported regions understand available services.</p>
         <div class="hero-btns anim d3">
-          <a href="#" class="btn-primary register-link">Open a Free Account →</a>
-          <a href="#guide" class="btn-outline">See How to Get Started ↓</a>
+          <a href="#" class="btn-primary register-link">Learn More →</a>
+          <a href="#guide" class="btn-outline">View Getting Started Guide ↓</a>
         </div>
-        <div class="hero-stats anim d4">
-          <div><div class="hero-stat-value">830K+</div><div class="hero-stat-label">Traders Worldwide</div></div>
-          <div><div class="hero-stat-value">$1T+</div><div class="hero-stat-label">Monthly Volume (AUD)</div></div>
-          <div><div class="hero-stat-value">1,200+</div><div class="hero-stat-label">Instruments Available</div></div>
+        <div class="hero-pills anim d4">
+          <div class="hero-pill">📊 Platform Features</div>
+          <div class="hero-pill">👤 Account Options</div>
+          <div class="hero-pill">💬 Support Resources</div>
         </div>
       </div>
-      <div class="anim d3"><img src="assets/image/FeaturedCards_01.png" alt="Trading Platform"></div>
+      <div class="anim d3"><img src="assets/image/FeaturedCards_01.png" alt="Platform"></div>
     </div>
   </div>
 </section>
@@ -194,22 +174,22 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div class="edu-intro">
       <div class="section-label">Getting Started</div>
-      <h2 class="section-title">Your First Steps in Forex Trading</h2>
-      <p>New to the markets or looking to sharpen your edge? These four steps will give you a solid foundation before you place your first trade.</p>
+      <h2 class="section-title">Platform Getting Started Guide</h2>
+      <p>If this is your first time exploring the platform, the following sections will help you understand account access, platform tools, educational resources and support services.</p>
     </div>
     <div class="guide-steps">
-      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📚</div><h3>Learn the Fundamentals</h3><p>Forex is the world's largest financial market, with over $6 trillion traded daily. Start by understanding how currency pairs, spreads and leverage work.</p></div>
-      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🖥️</div><h3>Pick the Right Platform</h3><p>A well-regulated platform with fast execution, tight spreads and professional-grade charting tools makes all the difference. Take your time choosing.</p></div>
-      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🎯</div><h3>Practise Risk-Free</h3><p>Open a demo account and trade with virtual funds in real market conditions. It's the best way to test strategies before committing real capital.</p></div>
-      <div class="step-card"><div class="step-num">04</div><div class="step-icon">🛡️</div><h3>Master Risk Management</h3><p>Protect your capital with stop-losses, sensible position sizing and diversification. The best traders are disciplined risk managers first and foremost.</p></div>
+      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📋</div><h3>Review Basic Information</h3><p>Start by familiarising yourself with common platform terms, account setup procedures and key product disclosure documents before exploring available features.</p></div>
+      <div class="step-card"><div class="step-num">02</div><div class="step-icon">🔍</div><h3>Explore Available Tools</h3><p>Browse different interfaces, charting tools and account features to see whether the configurations and capabilities meet your individual needs.</p></div>
+      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🖥️</div><h3>Try the Demo Environment</h3><p>Where a demo environment is available, users can familiarise themselves with the interface and feature configurations before exploring other account options.</p></div>
+      <div class="step-card"><div class="step-num">04</div><div class="step-icon">📄</div><h3>Review Risk Information</h3><p>Before using any market-related features, we recommend reading the platform's disclosure documents, product information and account terms carefully.</p></div>
     </div>
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">Why Pepperstone</div>
-      <h2 class="section-title">Why Over 830,000 Traders Choose Pepperstone</h2>
+      <div class="section-label">About</div>
+      <h2 class="section-title">About the Pepperstone Platform</h2>
     </div>
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;text-align:center;margin-bottom:60px">
       <img src="assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:36px;margin:0 auto 20px">
-      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Ultra-fast execution, razor-thin spreads, and the freedom to trade on the platform you prefer — that's what sets Pepperstone apart.</p>
+      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Pepperstone provides platform access, account options, support resources and educational content for users in supported regions to learn about available services.</p>
     </div>
   </div>
 </section>
@@ -217,25 +197,25 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 <section class="feature-section" id="features">
   <div class="container">
     <div style="text-align:center;margin-bottom:40px">
-      <div class="section-label">Core Advantages</div>
-      <h2 class="section-title">Built for Serious Traders</h2>
-      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">From tight spreads to institutional-grade liquidity, every feature is designed to give you an edge.</p>
+      <div class="section-label">Platform</div>
+      <h2 class="section-title">Platform Features & Services</h2>
+      <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">The platform offers multiple interface options, account features, support services and general educational content for users to explore.</p>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Tight Spreads</span><h2>Razor Account — Spreads from 0.0 Pips</h2><p>Trade major forex pairs with spreads starting at 0.0 pips, powered by deep liquidity from tier-1 providers. Index and commodity trades come commission-free.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Spreads"></div></div>
+      <div class="feature-text"><span class="badge">Accounts</span><h2>Account Options</h2><p>Pepperstone offers different account types and platform configurations. Product information, fee structures and available features may vary by region and account setup.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Accounts"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Fast Execution</span><h2>Speed You Can Rely On</h2><p>Orders are processed rapidly across a global network of data centres, giving you a stable, low-latency trading environment wherever you are.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Execution"></div></div>
+      <div class="feature-text"><span class="badge">Infrastructure</span><h2>Platform Infrastructure</h2><p>The platform is supported by digital infrastructure designed to provide stable account access and a consistent platform experience.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Infrastructure"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Deep Liquidity</span><h2>Tier-1 Institutional Liquidity</h2><p>Multiple tier-1 bank and institutional liquidity providers ensure competitive pricing and reliable fills — even when markets move fast.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Liquidity"></div></div>
+      <div class="feature-text"><span class="badge">Education</span><h2>Educational Resources</h2><p>Access general educational content including platform guides, market terminology and feature walkthroughs to help you navigate the platform effectively.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Education"></div></div>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">Strategy Insights</span><h2>Learn from Other Traders' Strategies</h2><p>Browse publicly shared trading strategies for research and inspiration. See how other traders approach the market and refine your own ideas.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Strategy"></div></div>
+      <div class="feature-text"><span class="badge">Support</span><h2>Support Services</h2><p>Multilingual customer support is available to assist with platform enquiries, account-related questions and technical guidance.</p><a href="#" class="btn-primary register-link">Learn More →</a></div>
+      <div class="feature-img"><div class="feature-img-wrap"><img src="assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Support"></div></div>
     </div>
   </div>
 </section>
@@ -244,36 +224,14 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div class="platforms-intro">
       <div class="section-label">Platforms</div>
-      <h2 class="section-title">Trade on the Platform You Prefer</h2>
-      <p>Four world-class platforms, one account. Choose the tools that suit your style.</p>
+      <h2 class="section-title">Available Platform Interfaces</h2>
+      <p>Multiple platform interfaces are available. Feature availability may vary by account type and region.</p>
     </div>
     <div class="platform-grid">
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>Powerful charting, a vibrant community and seamless trade execution — all in one place.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>Broader market access, more order types and enhanced analytical tools over MT4.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>The industry classic. Automate with EAs, customise indicators and run pattern recognition.</p></a>
-      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>Clean interface, advanced charting and built-in algo trading for the modern trader.</p></a>
-    </div>
-  </div>
-</section>
-
-<section class="comparison" id="comparison">
-  <div class="container">
-    <div class="comparison-intro">
-      <div class="section-label">Pepperstone vs Others</div>
-      <h2 class="section-title">How We Compare</h2>
-      <p>A quick look at how Pepperstone stacks up against other major brokers.</p>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>#</th><th>Broker</th><th>Score</th><th>Min Spread</th><th>Platforms</th><th>Regulation</th></tr></thead>
-        <tbody>
-          <tr class="hl"><td><span class="rank-badge gold">1</span></td><td class="broker-name">Pepperstone</td><td class="score">9.7</td><td>0.0 pips</td><td>MT4/MT5/TV/cTrader</td><td>ASIC · FCA · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">2</span></td><td class="broker-name">IC Markets</td><td class="score">9.2</td><td>0.1 pips</td><td>MT4/MT5/cTrader</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">3</span></td><td class="broker-name">XM Group</td><td class="score">8.8</td><td>0.6 pips</td><td>MT4/MT5</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">4</span></td><td class="broker-name">FP Markets</td><td class="score">8.5</td><td>0.1 pips</td><td>MT4/MT5/IRESS</td><td>ASIC · CySEC</td></tr>
-          <tr><td><span class="rank-badge normal">5</span></td><td class="broker-name">Exness</td><td class="score">8.2</td><td>0.3 pips</td><td>MT4/MT5</td><td>FCA · CySEC</td></tr>
-        </tbody>
-      </table>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📊</div><h3>TradingView</h3><p>Charting interface with community features and integrated platform access.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">⚡</div><h3>MetaTrader 5</h3><p>Extended interface with broader market views, additional order types and enhanced tools.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">🔧</div><h3>MetaTrader 4</h3><p>Established interface supporting automated features, custom indicators and pattern tools.</p></a>
+      <a href="#" class="platform-card register-link"><div class="platform-icon">📈</div><h3>cTrader</h3><p>Professional interface with advanced charting, built-in indicators and automation capabilities.</p></a>
     </div>
   </div>
 </section>
@@ -282,12 +240,12 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
   <div class="container">
     <div style="text-align:center"><div class="section-label">FAQ</div><h2 class="section-title">Frequently Asked Questions</h2></div>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is forex trading, and how do I get started?</div><div class="faq-a"><div class="faq-a-inner">Forex trading means buying one currency while selling another, aiming to profit from changes in exchange rates. To get started, open an account with a regulated broker like Pepperstone, fund it, and begin trading. We recommend practising on a demo account first.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is a 'spread' and why does it matter?</div><div class="faq-a"><div class="faq-a-inner">The spread is the gap between the buy and sell price of an instrument — it's one of your main trading costs. Tighter spreads mean lower costs per trade. Pepperstone's Razor account offers spreads from 0.0 pips on major pairs.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much do I need to start trading?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone has no minimum deposit requirement, so you can start with whatever amount suits your situation. If you're new, begin small and take advantage of the free demo account to build confidence.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What is a demo account and should I use one?</div><div class="faq-a"><div class="faq-a-inner">A demo account lets you trade in live market conditions using virtual funds — zero financial risk. It's the ideal way to learn the platform and test strategies before trading with real money.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Which trading platform should I choose?</div><div class="faq-a"><div class="faq-a-inner">It depends on your experience and needs. TradingView is great for charting and community insights; cTrader appeals to algo traders; MT4/MT5 are versatile all-rounders. Pepperstone supports all four, so you can switch any time.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What are the risks of forex trading?</div><div class="faq-a"><div class="faq-a-inner">Forex trading uses leverage, which can amplify both gains and losses. Market volatility and liquidity gaps are real risks. Always trade with a stop-loss, size your positions carefully, and never risk money you can't afford to lose.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What information does this website provide?</div><div class="faq-a"><div class="faq-a-inner">This website provides an overview of Pepperstone's platform features, account options, support resources and educational content. It is intended to help users understand the services available in supported regions.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What account options are available?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone offers different account types with varying configurations. Product details, fee structures and available features depend on your region and account setup. Please refer to the relevant product disclosure documents.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is a demo environment available?</div><div class="faq-a"><div class="faq-a-inner">Where available, a demo environment allows users to familiarise themselves with platform interfaces and features using simulated conditions, before exploring other account options.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What platforms can I access?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone supports multiple platform interfaces including MetaTrader 4, MetaTrader 5, TradingView and cTrader. Platform availability may vary by region and account type.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where can I find risk and disclosure information?</div><div class="faq-a"><div class="faq-a-inner">Risk disclosures, product information and account terms are available on the Pepperstone website. We recommend reviewing these documents carefully before accessing any market-related features.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How can I contact support?</div><div class="faq-a"><div class="faq-a-inner">Pepperstone provides multilingual customer support to assist with platform enquiries, account questions and technical guidance. Support availability may vary by region.</div></div></div>
     </div>
   </div>
 </section>
@@ -297,20 +255,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="cta-box">
       <div class="cta-content">
         <img src="assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:30px;margin-bottom:24px">
-        <h2>Ready to Start Trading?</h2>
-        <p>Join over 830,000 traders worldwide. Experience ultra-fast execution, razor-thin spreads and a platform built around you. Open a free account in minutes.</p>
+        <h2>Explore Platform Information</h2>
+        <p>Review platform features, account options, support resources and important legal and risk disclosure information.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#" class="btn-primary register-link">Open a Free Account →</a>
-          <a href="#" class="btn-outline register-link" data-demo="true">Try a Demo Account</a>
+          <a href="#" class="btn-primary register-link">Learn More →</a>
+          <a href="#" class="btn-outline register-link">View Disclosures</a>
         </div>
       </div>
       <div class="cta-checklist">
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Spreads from 0.0 pips on the Razor account</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>MT4, MT5, TradingView & cTrader supported</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Regulated by ASIC, FCA, CySEC and more</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Free demo account — no risk at all</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>24/5 multilingual customer support</span></div>
-        <div class="cta-check"><div class="cta-check-icon">✓</div><span>Over AU$1 trillion in monthly trading volume</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Multiple platform interface options available</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Account options may vary by region</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Support resources available on-site</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Demo environment may be available</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Multilingual customer support provided</span></div>
+        <div class="cta-check"><div class="cta-check-icon">•</div><span>Legal and risk disclosures available on-site</span></div>
       </div>
     </div>
   </div>
@@ -321,11 +279,11 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     <div class="footer-top">
       <div class="footer-brand">
         <img src="assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone">
-        <p>Pepperstone provides access to global markets including forex, indices, commodities, crypto and equities through award-winning platforms.</p>
+        <p>This website provides an overview of Pepperstone's platform features, account options, educational resources and support content.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h4>Navigation</h4><a href="#guide">Getting Started</a><a href="#features">Why Pepperstone</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a></div>
-        <div class="footer-col"><h4>Resources</h4><a href="#">Forex Glossary</a><a href="#">Risk Management</a><a href="#">Technical Analysis</a><a href="#">About Us</a></div>
+        <div class="footer-col"><h4>Navigation</h4><a href="#guide">Getting Started</a><a href="#features">Platform</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="#">Platform Terms</a><a href="#">Risk Disclosures</a><a href="#">Product Information</a><a href="#">About Us</a></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -343,23 +301,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
     var params = new URLSearchParams(window.location.search);
     var u = {};
     params.forEach(function(v, k) {
-      if (k.toLowerCase().indexOf('utm') === 0) {
-        u[k] = v;
-      }
+      if (k.toLowerCase().indexOf('utm') === 0) { u[k] = v; }
     });
     return u;
   }
-  function buildURL(isDemo) {
+  function buildURL() {
     var url = new URL(BASE_URL);
     Object.keys(BASE_PARAMS).forEach(function(k) { url.searchParams.set(k, BASE_PARAMS[k]); });
-    if(isDemo) url.searchParams.set('accountType','demo');
     var utm = getUTMParams();
     Object.keys(utm).forEach(function(k) { url.searchParams.set(k, utm[k]); });
     return url.toString();
   }
   function apply() {
     document.querySelectorAll('.register-link').forEach(function(el) {
-      el.href = buildURL(el.getAttribute('data-demo')==='true');
+      el.href = buildURL();
       el.setAttribute('target','_blank');
       el.setAttribute('rel','noopener');
     });
