@@ -10,18 +10,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-M8WNVMV4');</script>
 <!-- End Google Tag Manager -->
-<title>Pepperstone — 平台資訊概覽與使用入門指南</title>
-<meta name="description" content="了解 Pepperstone 平台功能、帳戶選項、支援資源及教育內容，方便用戶在支援地區了解相關服務與使用方式。">
-<link rel="shortcut icon" href="../assets/image/favicon.ico" type="image/x-icon">
+<title>APAC 交易資訊 — 平台概覽與使用入門</title>
+<meta name="description" content="介紹交易平台功能、帳戶選項、支援資源及教育內容的資訊網站，方便用戶在支援地區了解相關服務。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:#080b12;--bg-card:#111720;--bg-surface:#141b27;
+  --bg:#0a0f14;--bg-card:#131a22;--bg-surface:#1a232f;
   --border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);
-  --border-accent:rgba(0,100,250,0.3);--text:#e6e8f0;--text-sub:#9ba1b8;--text-muted:#555c75;
-  --pp-blue:#0064FA;--pp-blue-light:#3388ff;--pp-blue-glow:rgba(0,100,250,0.08);
-  --gold:#f5c842;
+  --border-accent:rgba(64,180,150,0.3);--text:#e8ecf0;--text-sub:#99a4b3;--text-muted:#5a6376;
+  --accent:#40b496;--accent-light:#5bcfae;--accent-glow:rgba(64,180,150,0.08);
   --font-display:'Plus Jakarta Sans',sans-serif;--font-body:'Noto Sans TC',sans-serif;--font-mono:'Space Mono',monospace;
   --radius:12px;--radius-lg:20px;--max-w:1200px;--ease:0.3s cubic-bezier(0.4,0,0.2,1);
 }
@@ -30,47 +28,50 @@ html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
 a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .container{max-width:var(--max-w);margin:0 auto;padding:0 24px}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--pp-blue);color:#fff;font-family:var(--font-display);font-weight:700;font-size:15px;border-radius:10px;border:none;cursor:pointer;transition:var(--ease);text-decoration:none}
-.btn-primary:hover{background:var(--pp-blue-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,100,250,0.3)}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--accent);color:#0a0f14;font-family:var(--font-display);font-weight:700;font-size:15px;border-radius:10px;border:none;cursor:pointer;transition:var(--ease);text-decoration:none}
+.btn-primary:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(64,180,150,0.25)}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;color:var(--text);font-family:var(--font-display);font-weight:600;font-size:15px;border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:var(--ease);text-decoration:none}
-.btn-outline:hover{border-color:var(--pp-blue);color:var(--pp-blue-light)}
-.badge{display:inline-block;font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:6px;border:1px solid var(--border-accent);color:var(--pp-blue-light);background:var(--pp-blue-glow)}
-.section-label{font-family:var(--font-mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--pp-blue-light);margin-bottom:16px}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent-light)}
+.badge{display:inline-block;font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:6px;border:1px solid var(--border-accent);color:var(--accent-light);background:var(--accent-glow)}
+.section-label{font-family:var(--font-mono);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent-light);margin-bottom:16px}
 .section-title{font-family:var(--font-display);font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.2;margin-bottom:20px}
-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(8,11,18,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,15,20,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .header-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
-.logo-img{height:32px;width:auto}
+.logo-wrap{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--text);letter-spacing:-0.3px}
+.logo-mark{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;color:#0a0f14;font-weight:900;font-size:16px}
 nav{display:flex;align-items:center;gap:28px}
 nav a{font-size:14px;color:var(--text-sub);transition:var(--ease);font-weight:500}
 nav a:hover{color:var(--text)}
-.nav-cta{padding:9px 22px;background:var(--pp-blue);color:#fff !important;border-radius:8px;font-weight:700 !important;font-size:13px !important}
-.nav-cta:hover{background:var(--pp-blue-light)}
+.nav-cta{padding:9px 22px;background:var(--accent);color:#0a0f14 !important;border-radius:8px;font-weight:700 !important;font-size:13px !important}
+.nav-cta:hover{background:var(--accent-light)}
 .mobile-toggle{display:none;background:none;border:none;color:var(--text);font-size:24px;cursor:pointer}
 .lang-bar{background:var(--bg-card);border-bottom:1px solid var(--border);padding:6px 0;text-align:center;font-size:12px;position:fixed;top:68px;left:0;right:0;z-index:999}
 .lang-bar a{color:var(--text-muted);margin:0 4px;transition:var(--ease)}
 .lang-bar a:hover{color:var(--text)}
 .hero{padding:160px 0 80px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:1000px;height:1000px;background:radial-gradient(circle,rgba(0,100,250,0.07) 0%,transparent 55%);pointer-events:none}
+.hero::before{content:'';position:absolute;top:-300px;left:50%;transform:translateX(-50%);width:1000px;height:1000px;background:radial-gradient(circle,rgba(64,180,150,0.06) 0%,transparent 55%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .hero h1{font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:800;line-height:1.15;margin-bottom:20px;letter-spacing:-0.5px}
-.hero h1 em{font-style:normal;color:var(--pp-blue-light)}
+.hero h1 em{font-style:normal;color:var(--accent-light)}
 .hero-desc{color:var(--text-sub);font-size:16px;line-height:1.8;margin-bottom:32px}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
 .hero-pills{display:flex;gap:16px;flex-wrap:wrap}
 .hero-pill{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:12px 20px;font-size:14px;color:var(--text-sub);font-weight:500}
-.hero-visual img{max-width:100%;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(0,100,250,0.15))}
-.awards-bar{padding:40px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.awards-bar img{max-height:48px;margin:0 auto;opacity:0.85;max-width:100%;object-fit:contain}
+.hero-visual{display:flex;justify-content:center;align-items:center;padding:40px}
+.hero-svg{width:100%;max-width:480px;height:auto}
 .edu-section{padding:100px 0}
 .edu-intro{text-align:center;max-width:700px;margin:0 auto 60px}
 .edu-intro p{color:var(--text-sub);font-size:15px;margin-top:12px}
 .guide-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:80px}
 .step-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;text-align:center;transition:var(--ease);position:relative}
 .step-card:hover{border-color:var(--border-accent);transform:translateY(-4px)}
-.step-num{font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--pp-blue);opacity:0.15;position:absolute;top:16px;left:20px;line-height:1}
-.step-icon{width:56px;height:56px;border-radius:14px;background:var(--pp-blue-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px}
+.step-num{font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--accent);opacity:0.15;position:absolute;top:16px;left:20px;line-height:1}
+.step-icon{width:56px;height:56px;border-radius:14px;background:var(--accent-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:24px}
 .step-card h3{font-family:var(--font-display);font-weight:700;font-size:16px;margin-bottom:10px}
 .step-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
+.info-panel{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:48px 40px;text-align:center;margin-bottom:60px}
+.info-panel-icon{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:28px;color:#0a0f14}
+.info-panel p{color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8}
 .feature-section{padding:80px 0}
 .feature-row{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:60px 0}
 .feature-row+.feature-row{border-top:1px solid var(--border)}
@@ -79,9 +80,9 @@ nav a:hover{color:var(--text)}
 .feature-text .badge{margin-bottom:16px}
 .feature-text h2{font-family:var(--font-display);font-size:clamp(22px,3vw,32px);font-weight:700;line-height:1.3;margin-bottom:16px}
 .feature-text p{color:var(--text-sub);font-size:15px;line-height:1.8;margin-bottom:24px}
-.feature-img-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;transition:var(--ease)}
-.feature-img-wrap:hover{border-color:var(--border-accent);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.3)}
-.feature-img-wrap img{max-width:380px;width:100%;margin:0 auto}
+.feature-svg-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:48px;transition:var(--ease);display:flex;justify-content:center;align-items:center;min-height:280px}
+.feature-svg-wrap:hover{border-color:var(--border-accent);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+.feature-svg{width:100%;max-width:320px;height:auto}
 .platforms{padding:100px 0}
 .platforms-intro{text-align:center;max-width:700px;margin:0 auto 60px}
 .platforms-intro p{color:var(--text-sub);font-size:15px;margin-top:12px}
@@ -97,21 +98,23 @@ nav a:hover{color:var(--text)}
 .faq-item:hover{border-color:var(--border-hover)}
 .faq-q{padding:20px 24px;font-family:var(--font-display);font-weight:600;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
 .faq-q::after{content:'+';font-size:22px;color:var(--text-muted);transition:var(--ease);flex-shrink:0;margin-left:16px}
-.faq-item.open .faq-q::after{content:'−';color:var(--pp-blue-light)}
+.faq-item.open .faq-q::after{content:'−';color:var(--accent-light)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
 .faq-item.open .faq-a{max-height:300px}
 .faq-a-inner{padding:0 24px 20px;color:var(--text-sub);font-size:14px;line-height:1.8}
 .cta-section{padding:100px 0}
-.cta-box{background:linear-gradient(135deg,#0a1628 0%,#0d1f3c 50%,#081020 100%);border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
-.cta-box::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,100,250,0.1) 0%,transparent 60%);pointer-events:none}
+.cta-box{background:linear-gradient(135deg,#0d1a1a 0%,#0f2020 50%,#0a1515 100%);border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:60px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(64,180,150,0.1) 0%,transparent 60%);pointer-events:none}
+.cta-logo-mark{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px;font-family:var(--font-display);font-weight:900;font-size:20px;color:#0a0f14}
 .cta-content h2{font-family:var(--font-display);font-size:clamp(26px,3.5vw,38px);font-weight:800;line-height:1.2;margin-bottom:16px}
 .cta-content p{color:var(--text-sub);font-size:15px;margin-bottom:28px;line-height:1.8}
 .cta-checklist{display:flex;flex-direction:column;gap:14px}
 .cta-check{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-sub)}
-.cta-check-icon{width:28px;height:28px;border-radius:8px;background:var(--pp-blue-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;color:var(--pp-blue-light);font-size:14px;flex-shrink:0}
+.cta-check-icon{width:28px;height:28px;border-radius:8px;background:var(--accent-glow);border:1px solid var(--border-accent);display:flex;align-items:center;justify-content:center;color:var(--accent-light);font-size:14px;flex-shrink:0}
 footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:48px;flex-wrap:wrap;gap:32px}
-.footer-brand{max-width:360px}.footer-brand img{height:28px;margin-bottom:16px}
+.footer-brand{max-width:360px}
+.footer-brand .logo-wrap{margin-bottom:16px;font-size:20px}
 .footer-brand p{color:var(--text-muted);font-size:13px;line-height:1.7}
 .footer-links{display:flex;gap:48px}
 .footer-col h4{font-family:var(--font-display);font-weight:600;font-size:14px;margin-bottom:16px}
@@ -144,26 +147,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header>
   <div class="header-inner">
-    <a href="/"><img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" class="logo-img"></a>
+    <a href="/" class="logo-wrap">
+      <span class="logo-mark">A</span>
+      <span>APAC 交易資訊</span>
+    </a>
     <nav id="mainNav">
       <a href="#guide">使用入門</a>
       <a href="#features">平台資訊</a>
-      <a href="#platforms">交易平台</a>
+      <a href="#platforms">介面選項</a>
       <a href="#faq">常見問題</a>
       <a href="#" class="nav-cta register-link">了解更多</a>
     </nav>
     <button class="mobile-toggle" onclick="document.getElementById('mainNav').style.display=document.getElementById('mainNav').style.display==='flex'?'none':'flex'">☰</button>
   </div>
 </header>
-<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/" style="color:var(--pp-blue-light)">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
+<div class="lang-bar"><a href="/">EN</a> | <a href="/tw/">繁中(TW)</a> | <a href="/hk/" style="color:var(--accent-light)">繁中(HK)</a> | <a href="/th/">ไทย</a> | <a href="/vn/">Tiếng Việt</a></div>
 
 <section class="hero">
   <div class="container">
     <div class="hero-grid">
       <div>
-        <div class="badge anim" style="margin-bottom:20px">Pepperstone · 2026</div>
-        <h1 class="anim d1">歡迎了解<br><em>Pepperstone 平台資訊概覽</em></h1>
-        <p class="hero-desc anim d2">本網站提供 Pepperstone 平台功能、帳戶選項、支援資源及教育內容的整體資訊，方便用戶在支援地區了解相關服務與使用方式。</p>
+        <div class="badge anim" style="margin-bottom:20px">平台資訊 · 2026</div>
+        <h1 class="anim d1">歡迎了解<br><em>交易平台資訊概覽</em></h1>
+        <p class="hero-desc anim d2">本網站提供交易平台功能、帳戶選項、支援資源及教育內容的整體資訊，方便用戶在支援地區了解相關服務與使用方式。</p>
         <div class="hero-btns anim d3">
           <a href="#" class="btn-primary register-link">了解更多 →</a>
           <a href="#guide" class="btn-outline">查看使用入門 ↓</a>
@@ -174,12 +180,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="hero-pill">💬 支援資源</div>
         </div>
       </div>
-      <div class="anim d3"><img src="../assets/image/FeaturedCards_01.png" alt="Platform"></div>
+      <div class="hero-visual anim d3">
+        <svg class="hero-svg" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#40b496" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#5bcfae" stop-opacity="0.4"/>
+            </linearGradient>
+            <linearGradient id="heroBg" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#1a232f"/>
+              <stop offset="100%" stop-color="#131a22"/>
+            </linearGradient>
+          </defs>
+          <rect x="40" y="50" width="400" height="260" rx="16" fill="url(#heroBg)" stroke="rgba(64,180,150,0.2)" stroke-width="1"/>
+          <circle cx="64" cy="74" r="6" fill="#ff5f57"/>
+          <circle cx="84" cy="74" r="6" fill="#febc2e"/>
+          <circle cx="104" cy="74" r="6" fill="#28c840"/>
+          <line x1="40" y1="98" x2="440" y2="98" stroke="rgba(255,255,255,0.06)"/>
+          <path d="M 70 240 L 110 210 L 150 220 L 190 180 L 230 195 L 270 160 L 310 140 L 350 155 L 390 120 L 420 130" stroke="url(#heroGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="420" cy="130" r="6" fill="#5bcfae"/>
+          <circle cx="420" cy="130" r="12" fill="#5bcfae" opacity="0.2"/>
+          <rect x="70" y="260" width="60" height="20" rx="4" fill="rgba(64,180,150,0.15)"/>
+          <rect x="140" y="260" width="60" height="20" rx="4" fill="rgba(255,255,255,0.05)"/>
+          <rect x="210" y="260" width="60" height="20" rx="4" fill="rgba(255,255,255,0.05)"/>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
-
-<div class="awards-bar"><div class="container"><img src="../assets/image/Rated1_02-2048x363.png" alt="Awards"></div></div>
 
 <section class="edu-section" id="guide">
   <div class="container">
@@ -196,11 +224,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div style="text-align:center;margin-bottom:40px">
       <div class="section-label">關於平台</div>
-      <h2 class="section-title">關於 Pepperstone 平台</h2>
+      <h2 class="section-title">關於平台</h2>
     </div>
-    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;text-align:center;margin-bottom:60px">
-      <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:36px;margin:0 auto 20px">
-      <p style="color:var(--text-sub);font-size:15px;max-width:700px;margin:0 auto;line-height:1.8">Pepperstone 提供平台存取、帳戶選項、支援資源及教育內容，方便支援地區的用戶了解相關服務。</p>
+    <div class="info-panel">
+      <div class="info-panel-icon">ⓘ</div>
+      <p>本平台提供存取方式、帳戶選項、支援資源及教育內容，方便支援地區的用戶了解相關服務。</p>
     </div>
   </div>
 </section>
@@ -213,20 +241,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p style="color:var(--text-sub);max-width:600px;margin:8px auto 0;font-size:15px">本平台提供多種介面選項、帳戶功能、支援服務與一般教育內容，方便用戶了解可用資源。</p>
     </div>
     <div class="feature-row">
-      <div class="feature-text"><span class="badge">帳戶選項</span><h2>帳戶選項</h2><p>Pepperstone 提供不同帳戶類型與平台設定，相關產品資訊、費用內容與可用功能將依地區與帳戶配置而有所不同。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_RazorSharpSpread_noBG-768x591.png" alt="Accounts"></div></div>
+      <div class="feature-text"><span class="badge">帳戶選項</span><h2>帳戶選項</h2><p>平台提供不同帳戶類型與平台設定，相關產品資訊、費用內容與可用功能將依地區與帳戶配置而有所不同。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
+      <div class="feature-img"><div class="feature-svg-wrap">
+        <svg class="feature-svg" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="40" width="240" height="50" rx="10" fill="rgba(64,180,150,0.08)" stroke="rgba(64,180,150,0.2)"/>
+          <circle cx="65" cy="65" r="10" fill="#40b496"/>
+          <rect x="85" y="57" width="80" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+          <rect x="85" y="70" width="50" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="40" y="100" width="240" height="50" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+          <circle cx="65" cy="125" r="10" fill="rgba(255,255,255,0.1)"/>
+          <rect x="85" y="117" width="80" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+          <rect x="85" y="130" width="50" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+          <rect x="40" y="160" width="240" height="50" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+          <circle cx="65" cy="185" r="10" fill="rgba(255,255,255,0.1)"/>
+          <rect x="85" y="177" width="80" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+          <rect x="85" y="190" width="50" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        </svg>
+      </div></div>
     </div>
     <div class="feature-row">
       <div class="feature-text"><span class="badge">平台設施</span><h2>平台基礎設施</h2><p>平台由數位基礎設施支援，旨在提供穩定的帳戶存取與平台功能使用體驗。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Platforms_and_Tools_noBG-768x591.png" alt="Infrastructure"></div></div>
+      <div class="feature-img"><div class="feature-svg-wrap">
+        <svg class="feature-svg" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="160" cy="120" r="70" fill="none" stroke="rgba(64,180,150,0.3)" stroke-width="1" stroke-dasharray="4 4"/>
+          <circle cx="160" cy="120" r="45" fill="rgba(64,180,150,0.08)" stroke="rgba(64,180,150,0.3)"/>
+          <circle cx="160" cy="120" r="20" fill="#40b496"/>
+          <circle cx="90" cy="120" r="10" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="230" cy="120" r="10" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="160" cy="50" r="10" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="160" cy="190" r="10" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="112" cy="72" r="8" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="208" cy="168" r="8" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="208" cy="72" r="8" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+          <circle cx="112" cy="168" r="8" fill="rgba(91,207,174,0.3)" stroke="#40b496"/>
+        </svg>
+      </div></div>
     </div>
     <div class="feature-row">
       <div class="feature-text"><span class="badge">教育資源</span><h2>教育內容</h2><p>提供一般性的教育內容，包含平台操作指南、市場術語說明及功能導覽，協助用戶有效使用平台。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/FeaturedCards_IndustryLeadingLiquidity_noBG-768x591.png" alt="Education"></div></div>
+      <div class="feature-img"><div class="feature-svg-wrap">
+        <svg class="feature-svg" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+          <rect x="50" y="50" width="100" height="140" rx="8" fill="rgba(64,180,150,0.08)" stroke="rgba(64,180,150,0.3)"/>
+          <rect x="60" y="65" width="80" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+          <rect x="60" y="80" width="60" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="60" y="95" width="70" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <rect x="60" y="108" width="55" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+          <circle cx="100" cy="155" r="20" fill="rgba(64,180,150,0.2)"/>
+          <text x="100" y="162" text-anchor="middle" fill="#40b496" font-size="18" font-weight="700">A</text>
+          <rect x="170" y="50" width="100" height="140" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+          <rect x="180" y="65" width="80" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+          <rect x="180" y="80" width="60" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+          <rect x="180" y="95" width="70" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+          <rect x="180" y="108" width="55" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+          <circle cx="220" cy="155" r="20" fill="rgba(255,255,255,0.08)"/>
+          <text x="220" y="162" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="18" font-weight="700">B</text>
+        </svg>
+      </div></div>
     </div>
     <div class="feature-row">
       <div class="feature-text"><span class="badge">客戶支援</span><h2>支援服務</h2><p>提供多語言客戶支援，協助處理平台相關諮詢、帳戶問題及技術指導。</p><a href="#" class="btn-primary register-link">了解更多 →</a></div>
-      <div class="feature-img"><div class="feature-img-wrap"><img src="../assets/image/Deposits-Withdrawals_noBG-768x591.png" alt="Support"></div></div>
+      <div class="feature-img"><div class="feature-svg-wrap">
+        <svg class="feature-svg" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+          <rect x="60" y="60" width="200" height="140" rx="12" fill="rgba(64,180,150,0.08)" stroke="rgba(64,180,150,0.3)"/>
+          <circle cx="100" cy="100" r="18" fill="rgba(64,180,150,0.3)"/>
+          <rect x="130" y="92" width="120" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+          <rect x="130" y="105" width="80" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+          <circle cx="100" cy="140" r="18" fill="rgba(64,180,150,0.15)"/>
+          <rect x="130" y="132" width="100" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+          <rect x="130" y="145" width="70" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+          <circle cx="100" cy="180" r="18" fill="rgba(64,180,150,0.15)"/>
+          <rect x="130" y="172" width="110" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+          <rect x="130" y="185" width="60" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+        </svg>
+      </div></div>
     </div>
   </div>
 </section>
@@ -234,7 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="platforms" id="platforms">
   <div class="container">
     <div class="platforms-intro">
-      <div class="section-label">交易平台</div>
+      <div class="section-label">介面選項</div>
       <h2 class="section-title">可用的平台介面</h2>
       <p>提供多種平台介面選項，功能可用性可能因帳戶類型與地區而異。</p>
     </div>
@@ -251,12 +338,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div style="text-align:center"><div class="section-label">常見問題</div><h2 class="section-title">常見問題</h2></div>
     <div class="faq-list">
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">本網站提供哪些資訊？</div><div class="faq-a"><div class="faq-a-inner">本網站提供 Pepperstone 平台功能、帳戶選項、支援資源及教育內容的整體資訊，旨在協助支援地區的用戶了解可用服務。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">有哪些帳戶選項？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 提供不同類型的帳戶與配置方案。產品詳情、費用結構與可用功能依您所在地區及帳戶設定而異，請參閱相關產品揭露文件。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">本網站提供哪些資訊？</div><div class="faq-a"><div class="faq-a-inner">本網站提供交易平台功能、帳戶選項、支援資源及教育內容的整體資訊，旨在協助支援地區的用戶了解可用服務。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">有哪些帳戶選項？</div><div class="faq-a"><div class="faq-a-inner">平台提供不同類型的帳戶與配置方案。產品詳情、費用結構與可用功能依您所在地區及帳戶設定而異，請參閱相關產品揭露文件。</div></div></div>
       <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">是否提供模擬環境？</div><div class="faq-a"><div class="faq-a-inner">在可提供的地區，模擬環境允許用戶透過模擬條件熟悉平台介面與功能，再進一步了解其他帳戶選項。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">可以使用哪些平台？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 支援多種平台介面，包含 MetaTrader 4、MetaTrader 5、TradingView 及 cTrader。平台可用性可能因地區及帳戶類型而異。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">在哪裡可以查看風險與揭露資訊？</div><div class="faq-a"><div class="faq-a-inner">風險揭露、產品資訊及帳戶條款可於 Pepperstone 網站上查閱。建議在使用任何市場相關功能前，仔細閱讀相關文件。</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">如何聯繫客服？</div><div class="faq-a"><div class="faq-a-inner">Pepperstone 提供多語言客戶支援，協助處理平台相關諮詢、帳戶問題及技術指導。客服可用性可能因地區而異。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">可以使用哪些平台？</div><div class="faq-a"><div class="faq-a-inner">平台支援多種介面選項，包含 MetaTrader 4、MetaTrader 5、TradingView 及 cTrader。平台可用性可能因地區及帳戶類型而異。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">在哪裡可以查看風險與揭露資訊？</div><div class="faq-a"><div class="faq-a-inner">風險揭露、產品資訊及帳戶條款可於平台官方網站上查閱。建議在使用任何市場相關功能前，仔細閱讀相關文件。</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">如何聯繫客服？</div><div class="faq-a"><div class="faq-a-inner">提供多語言客戶支援，協助處理平台相關諮詢、帳戶問題及技術指導。客服可用性可能因地區而異。</div></div></div>
     </div>
   </div>
 </section>
@@ -265,7 +352,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="cta-box">
       <div class="cta-content">
-        <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone" style="height:30px;margin-bottom:24px">
+        <div class="cta-logo-mark">A</div>
         <h2>進一步了解平台資訊</h2>
         <p>查看平台功能、帳戶選項、支援資源及重要法律與風險揭露內容。</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
@@ -289,17 +376,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="../assets/image/Logo_Horizontal_Colour_Positive-e1723885066764.png" alt="Pepperstone">
-        <p>本網站提供 Pepperstone 平台功能、帳戶選項、教育資源與支援內容的整體資訊。</p>
+        <div class="logo-wrap"><span class="logo-mark">A</span><span>APAC 交易資訊</span></div>
+        <p>本網站提供交易平台功能、帳戶選項、教育資源與支援內容的整體資訊。</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col"><h4>Navigation</h4><a href="#guide">使用入門</a><a href="#features">平台資訊</a><a href="#platforms">交易平台</a><a href="#faq">常見問題</a></div>
+        <div class="footer-col"><h4>Navigation</h4><a href="#guide">使用入門</a><a href="#features">平台資訊</a><a href="#platforms">介面選項</a><a href="#faq">常見問題</a></div>
         <div class="footer-col"><h4>Resources</h4><a href="#">平台條款</a><a href="#">風險揭露</a><a href="#">產品資訊</a><a href="#">關於我們</a></div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-legal"><strong>風險揭露：</strong>差價合約（CFD）屬於複雜的金融商品，由於槓桿效應，存在快速虧損的高度風險。多數散戶投資者在交易差價合約時會發生虧損。請審慎評估您是否充分了解差價合約的運作方式，以及是否能夠承擔資金損失的風險。過去的表現不代表未來的結果。本網站內容僅供參考，不構成任何投資建議。</div>
-      <div class="footer-copy">© 2026 Pepperstone Markets Limited</div>
+      <div class="footer-copy">© 2026 APAC 交易資訊</div>
     </div>
   </div>
 </footer>
