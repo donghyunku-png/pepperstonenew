@@ -10,8 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-M8WNVMV4');</script>
 <!-- End Google Tag Manager -->
-<title>APAC Trading Guide — Tổng quan nền tảng và Hướng dẫn bắt đầu</title>
-<meta name="description" content="Trang web cung cấp thông tin về tính năng nền tảng giao dịch, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục.">
+<title>APAC Platform Guide — Tổng quan nền tảng và Hướng dẫn bắt đầu</title>
+<meta name="description" content="Trang web cung cấp thông tin về tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -123,6 +123,20 @@ footer{padding:60px 0 32px;border-top:1px solid var(--border)}
 .footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
 .footer-legal{font-size:11px;color:var(--text-muted);line-height:1.8;max-width:900px}
 .footer-copy{font-size:12px;color:var(--text-muted);white-space:nowrap}
+/* Interstitial Modal */
+.interstitial{position:fixed;inset:0;z-index:10000;display:none;align-items:center;justify-content:center;padding:20px}
+.interstitial.show{display:flex}
+.interstitial-backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);animation:fadeIn 0.2s ease}
+.interstitial-box{position:relative;background:var(--bg-card);border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:40px 36px;max-width:480px;width:100%;text-align:center;animation:slideUp 0.3s cubic-bezier(0.4,0,0.2,1);box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.interstitial-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:8px;background:transparent;border:none;color:var(--text-sub);font-size:20px;cursor:pointer;transition:var(--ease);display:flex;align-items:center;justify-content:center}
+.interstitial-close:hover{background:var(--bg-surface);color:var(--text)}
+.interstitial-icon{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:inline-flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:28px;color:#0a0f14}
+.interstitial-box h3{font-family:var(--font-display);font-size:22px;font-weight:700;margin-bottom:12px;color:var(--text)}
+.interstitial-box p{color:var(--text-sub);font-size:14px;line-height:1.75;margin-bottom:28px}
+.interstitial-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.interstitial-actions .btn-primary,.interstitial-actions .btn-outline{padding:12px 28px;font-size:14px}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px) scale(0.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:960px){
   .hero-grid,.feature-row,.cta-box{grid-template-columns:1fr}
   .feature-row:nth-child(even) .feature-text{order:1}
@@ -149,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="header-inner">
     <a href="/" class="logo-wrap">
       <span class="logo-mark">A</span>
-      <span>APAC Trading Guide</span>
+      <span>APAC Platform Guide</span>
     </a>
     <nav id="mainNav">
       <a href="#guide">Bắt đầu</a>
@@ -168,8 +182,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-grid">
       <div>
         <div class="badge anim" style="margin-bottom:20px">Thông tin nền tảng · 2026</div>
-        <h1 class="anim d1">Chào mừng đến với<br><em>Tổng quan nền tảng giao dịch</em></h1>
-        <p class="hero-desc anim d2">Trang web này cung cấp thông tin tổng quan về tính năng nền tảng giao dịch, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục, giúp người dùng tại các khu vực được hỗ trợ tìm hiểu về các dịch vụ có sẵn.</p>
+        <h1 class="anim d1">Chào mừng đến với<br><em>Tổng quan nền tảng</em></h1>
+        <p class="hero-desc anim d2">Trang web này cung cấp thông tin tổng quan về tính năng nền tảng, tùy chọn tài khoản, tài nguyên hỗ trợ và nội dung giáo dục, giúp người dùng tại các khu vực được hỗ trợ tìm hiểu về các dịch vụ có sẵn.</p>
         <div class="hero-btns anim d3">
           <a href="#" class="btn-primary register-link">Tìm hiểu thêm →</a>
           <a href="#guide" class="btn-outline">Xem hướng dẫn bắt đầu ↓</a>
@@ -376,7 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo-wrap"><span class="logo-mark">A</span><span>APAC Trading Guide</span></div>
+        <div class="logo-wrap"><span class="logo-mark">A</span><span>APAC Platform Guide</span></div>
         <p>Trang web này cung cấp tổng quan về tính năng nền tảng giao dịch, tùy chọn tài khoản, tài nguyên giáo dục và nội dung hỗ trợ.</p>
       </div>
       <div class="footer-links">
@@ -386,10 +400,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="footer-bottom">
       <div class="footer-legal"><strong>Cảnh báo rủi ro:</strong> CFD là công cụ tài chính phức tạp, tiềm ẩn nguy cơ thua lỗ nhanh chóng do sử dụng đòn bẩy. Phần lớn nhà đầu tư cá nhân bị lỗ khi giao dịch CFD. Quý vị nên cân nhắc liệu mình đã hiểu rõ cách thức hoạt động của CFD hay chưa, và liệu có đủ khả năng chấp nhận rủi ro thua lỗ cao hay không. Kết quả trong quá khứ không đảm bảo cho kết quả tương lai. Nội dung trên trang web này chỉ mang tính tham khảo, không phải lời khuyên đầu tư.</div>
-      <div class="footer-copy">© 2026 APAC Trading Guide</div>
+      <div class="footer-copy">© 2026 APAC Platform Guide</div>
     </div>
   </div>
 </footer>
+
+<!-- Interstitial Modal -->
+<div class="interstitial" id="interstitialModal" role="dialog" aria-modal="true" aria-labelledby="interstitialTitle">
+  <div class="interstitial-backdrop" onclick="closeInterstitial()"></div>
+  <div class="interstitial-box">
+    <button class="interstitial-close" onclick="closeInterstitial()" aria-label="Close">×</button>
+    <div class="interstitial-icon">🔗</div>
+    <h3 id="interstitialTitle">Chuyển hướng đến trang web bên ngoài</h3>
+    <p>Quý vị sắp được chuyển hướng đến trang web chính thức của Pepperstone để tiếp tục. Vui lòng xem xét các điều khoản và tài liệu công bố của họ trước khi tiếp tục.</p>
+    <div class="interstitial-actions">
+      <a href="#" id="interstitialContinue" class="btn-primary">Tiếp tục →</a>
+      <button onclick="closeInterstitial()" class="btn-outline">Hủy</button>
+    </div>
+  </div>
+</div>
 
 <script>
 (function() {
@@ -410,11 +439,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     Object.keys(utm).forEach(function(k) { url.searchParams.set(k, utm[k]); });
     return url.toString();
   }
+  var modal = document.getElementById('interstitialModal');
+  var continueBtn = document.getElementById('interstitialContinue');
+  window.closeInterstitial = function() {
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+  };
+  function openInterstitial() {
+    continueBtn.href = buildURL();
+    continueBtn.setAttribute('target', '_blank');
+    continueBtn.setAttribute('rel', 'noopener');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
   function apply() {
     document.querySelectorAll('.register-link').forEach(function(el) {
-      el.href = buildURL();
-      el.setAttribute('target','_blank');
-      el.setAttribute('rel','noopener');
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        openInterstitial();
+      });
+    });
+    continueBtn.addEventListener('click', function() {
+      setTimeout(closeInterstitial, 300);
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('show')) closeInterstitial();
     });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',apply); else apply();
