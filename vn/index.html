@@ -394,9 +394,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function() {
   var TRACKING_URL = 'https://track.casfarel.com/JFB2cdsK';
+  function getUTMParams() {
+    var params = new URLSearchParams(window.location.search);
+    var u = {};
+    params.forEach(function(v, k) {
+      if (k.toLowerCase().indexOf('utm') === 0) { u[k] = v; }
+    });
+    return u;
+  }
+  function buildURL() {
+    var url = new URL(TRACKING_URL);
+    var utm = getUTMParams();
+    Object.keys(utm).forEach(function(k) { url.searchParams.set(k, utm[k]); });
+    return url.toString();
+  }
   function apply() {
     document.querySelectorAll('.register-link').forEach(function(el) {
-      el.href = TRACKING_URL;
+      el.href = buildURL();
       el.setAttribute('target', '_blank');
       el.setAttribute('rel', 'noopener');
     });
